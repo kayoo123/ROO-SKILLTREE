@@ -1,0 +1,256 @@
+<!doctype html><html lang=fr> <link href=data:, rel=icon><title>JEREMI - Texte</title><meta charset=utf-8><meta content="width=device-width" name=viewport><style>body{display:flex;flex-direction:column;font:16px/1.6 sans-serif;margin:0;min-height:100vh;overflow:hidden scroll;word-wrap:break-word}p{text-align:justify}h1,h2,h3{margin-top:40px}pre>code,main,#m{display:block;flex:1;margin:10px auto 40px;max-width:52ch;padding:0 10px;width:90%}pre>code{background:#000;color:#eee;font:100%/1.6 Consolas,monospace;left:50%;max-width:90ch;padding:20px;position:relative;transform:translateX(-50%);white-space:pre-wrap;width:90vw}code{padding:.1em .4em;font-weight:700;background:#fcc;border-radius:4px}nav li{display:inline-block;margin:0 20px 0 0;line-height:2.5}blockquote{border-left:7px solid #fc9;color:#333;margin:0;padding:0 14px}img{display:block;width:100%}nav,footer{background:#003;padding:30px}nav a,footer{color:#eee}#a{color:#f06}a{color:#00C;text-decoration:none}a:hover{border-bottom:2px solid}ul{padding-left:2em}nav ul{margin:0;text-align:center}li+li{margin-top:4px}</style>
+<nav>
+<ul><li><a href=/ id=a><b>JEREMI.biz</b></a> 🐨<li><a href=/news/>News</a><li><a href=/wiki>Wiki</a><li><a href=https://mariage.jeremi.biz target="_blank">Mariage</a><li><a href=/pages/ecriture-inclusive.html>Texte</a><li><a href=/pages/photos/>Photos</a><li><a href=https://github.com/kayoo123/ target="_blank">GitHub</a><li><a href=/pages/contact.html>Contact</a></ul>
+</nav>
+<main>
+<script src="priest.js"></script>
+<body>
+	<h1 id=a>High Priest</h1>
+	<fieldset><legend> 1st job: [0/40]</legend>
+		
+		<div id="HolyLight">
+		<input type="button" value="+" id="inc" onclick="incNumber(HolyLight)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(HolyLight)"/>
+		<img src="img/1.gif" alt="HolyLight" style="width:20px;height:20px;display:inline;">
+		<span title="OVER TEXT">Holy Light</span> [<label id="1">0</label>/5]
+		<br />
+		</div>
+		<div id="DemonBane">
+ 		<input type="button" value="+" id="inc" onclick="incNumber(DemonBane)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(DemonBane)"/>
+		<img src="img/2.gif" alt="HolyLight" style="width:20px;height:20px;display:inline;">
+		<span title="">Demon Bane</span> [<label id="2">0</label>/10]
+		<br />
+		</div>
+		<div id="SignumCrucis" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(SignumCrucis)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(SignumCrucis)"/>
+		<img src="img/6.gif" alt="DemonBane" style="width:20px;height:20px;display:inline;">
+		<span title="">SignumCrucis</span> [<label id="6">0</label>/10]
+		<br />
+		</div>
+		<div id="Heal">
+		<input type="button" value="+" id="inc" onclick="incNumber(Heal)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Heal)"/>
+		<img src="img/3.gif" alt="Heal" style="width:20px;height:20px;display:inline;">
+		<span title="">Heal</span> [<label id="3">0</label>/10]
+		<br />
+		</div>
+		<div id="Angelus" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(Angelus)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Angelus)"/>
+		<img src="img/7.gif" alt="Angelus" style="width:20px;height:20px;display:inline;">
+		<span title="">Angelus</span> [<label id="7">0</label>/10]
+		<br />
+		</div>
+		<div id="KyrieEleison" hidden>>>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(KyrieEleison)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(KyrieEleison)"/>
+		<img src="img/9.gif" alt="KyrieEleison" style="width:20px;height:20px;display:inline;">
+		<span title="">KyrieEleison</span> [<label id="9">0</label>/10]
+		<br />
+		</div>
+		<div id="Teleport">
+		<input type="button" value="+" id="inc" onclick="incNumber(Teleport)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Teleport)"/>
+		<img src="img/4.gif" alt="Teleport" style="width:20px;height:20px;display:inline;">
+		<span title="">Teleport</span> [<label id="4">0</label>/1]
+		<br />
+		</div>
+		<div id="Blessing">
+		<input type="button" value="+" id="inc" onclick="incNumber(Blessing)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Blessing)"/>
+		<img src="img/5.gif" alt="Blessing" style="width:20px;height:20px;display:inline;">
+		<span title="">Blessing</span> [<label id="5">0</label>/10]
+		<br />
+		</div>
+		<div id="IncreaseAgility" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(IncreaseAgility)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(IncreaseAgility)"/>
+		<img src="img/8.gif" alt="IncreaseAgility" style="width:20px;height:20px;display:inline;">
+		<span title="">IncreaseAgility</span> [<label id="8">0</label>/5]
+		<br />
+		</div>
+
+	</fieldset>
+
+	<fieldset><legend> 2nd job: [0/40]</legend>
+		
+		<div id="Magnificat">
+		<input type="button" value="+" id="inc" onclick="incNumber(Magnificat)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Magnificat)"/>
+		<img src="img/10.gif" alt="Magnificat" style="width:20px;height:20px;display:inline;">
+		<span title="">Magnificat</span> [<label id="10">0</label>/5]
+		<br />
+		</div>
+		<div id="Resurection">
+ 		<input type="button" value="+" id="inc" onclick="incNumber(Resurection)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Resurection)"/>
+		<img src="img/11.gif" alt="Resurection" style="width:20px;height:20px;display:inline;">
+		<span title="">Resurection</span> [<label id="11">0</label>/4]
+		<br />
+		</div>
+		<div id="TurnUndead" hidden>>>
+ 		<input type="button" value="+" id="inc" onclick="incNumber(TurnUndead)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(TurnUndead)"/>
+		<img src="img/16.gif" alt="TurnUndead" style="width:20px;height:20px;display:inline;">
+		<span title="">TurnUndead</span> [<label id="16">0</label>/10]
+		<br />
+		</div>
+		<div id="MagnusExorcismus" hidden>>>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(MagnusExorcismus)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(MagnusExorcismus)"/>
+		<img src="img/21.gif" alt="MagnusExorcismus" style="width:20px;height:20px;display:inline;">
+		<span title="">MagnusExorcismus</span> [<label id="21">0</label>/10]
+		<br />
+		</div>
+		<div id="Sanctuary">
+		<input type="button" value="+" id="inc" onclick="incNumber(Sanctuary)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Sanctuary)"/>
+		<img src="img/12.gif" alt="Sanctuary" style="width:20px;height:20px;display:inline;">
+		<span title="">Sanctuary</span> [<label id="12">0</label>/10]
+		<br />
+		</div>
+		<div id="MaceMastery">
+		<input type="button" value="+" id="inc" onclick="incNumber(MaceMastery)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(MaceMastery)"/>
+		<img src="img/13.gif" alt="MaceMastery" style="width:20px;height:20px;display:inline;">
+		<span title="">MaceMastery</span> [<label id="13">0</label>/10]
+		<br />
+		</div>
+		<div id="HolyJudgment" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(HolyJudgment)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(HolyJudgment)"/>
+		<img src="img/18.gif" alt="HolyJudgment" style="width:20px;height:20px;display:inline;">
+		<span title="">HolyJudgment</span> [<label id="18">0</label>/10]
+		<br />
+		</div>
+		<div id="Recovery">
+		<input type="button" value="+" id="inc" onclick="incNumber(Recovery)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Recovery)"/>
+		<img src="img/14.gif" alt="Recovery" style="width:20px;height:20px;display:inline;">
+		<span title="">Recovery</span> [<label id="14">0</label>/3]
+		<br />
+		</div>
+		<div id="ImpositioManus">
+		<input type="button" value="+" id="inc" onclick="incNumber(ImpositioManus)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(ImpositioManus)"/>
+		<img src="img/15.gif" alt="ImpositioManus" style="width:20px;height:20px;display:inline;">
+		<span title="">ImpositioManus</span> [<label id="15">0</label>/10]
+		<br />
+		</div>
+		<div id="Pneuma">
+		<input type="button" value="+" id="inc" onclick="incNumber(Pneuma)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Pneuma)"/>
+		<img src="img/17.gif" alt="Pneuma" style="width:20px;height:20px;display:inline;">
+		<span title="">Pneuma</span> [<label id="17">0</label>/10]
+		<br />
+		</div>
+		<div id="Aspersio">
+		<input type="button" value="+" id="inc" onclick="incNumber(Aspersio)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Aspersio)"/>
+		<img src="img/19.gif" alt="Aspersio" style="width:20px;height:20px;display:inline;">
+		<span title="">Aspersio</span> [<label id="19">0</label>/2]
+		<br />
+		</div>
+		<div id="ZenHeart">
+		<input type="button" value="+" id="inc" onclick="incNumber(ZenHeart)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(ZenHeart)"/>
+		<img src="img/20.gif" alt="ZenHeart" style="width:20px;height:20px;display:inline;">
+		<span title="">ZenHeart</span> [<label id="20">0</label>/10]
+		<br />
+		</div>
+		<div id="SafetyWall">
+		<input type="button" value="+" id="inc" onclick="incNumber(SafetyWall)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(SafetyWall)"/>
+		<img src="img/22.gif" alt="SafetyWall" style="width:20px;height:20px;display:inline;">
+		<span title="">SafetyWall</span> [<label id="22">0</label>/10]
+		<br />
+		</div>
+		<div id="Gloria">
+		<input type="button" value="+" id="inc" onclick="incNumber(Gloria)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Gloria)"/>
+		<img src="img/23.gif" alt="Gloria" style="width:20px;height:20px;display:inline;">
+		<span title="">Gloria</span> [<label id="23">0</label>/5]
+		<br />
+		</div>
+
+	</fieldset>
+
+	<fieldset><legend> 3rd job: [0/40]</legend>
+		
+		<div id="Meditatio" hidden>**
+		<input type="button" value="+" id="inc" onclick="incNumber(Meditatio)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Meditatio)"/>
+		<img src="img/24.gif" alt="Meditatio" style="width:20px;height:20px;display:inline;">
+		<span title="">Meditatio</span> [<label id="24">0</label>/10]
+		<br />
+		</div>
+		<div id="ManaRecharge" hidden>>>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(ManaRecharge)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(ManaRecharge)"/>
+		<img src="img/29.gif" alt="ManaRecharge" style="width:20px;height:20px;display:inline;">
+		<span title="">ManaRecharge</span> [<label id="29">0</label>/5]
+		<br />
+		</div>
+		<div id="Assumptio">
+ 		<input type="button" value="+" id="inc" onclick="incNumber(Assumptio)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Assumptio)"/>
+		<img src="img/25.gif" alt="Assumptio" style="width:20px;height:20px;display:inline;">
+		<span title="">Assumptio</span> [<label id="25">0</label>/10]
+		<br />
+		</div>
+		<div id="Suffragium" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(Suffragium)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Suffragium)"/>
+		<img src="img/30.gif" alt="Suffragium" style="width:20px;height:20px;display:inline;">
+		<span title="">Suffragium</span> [<label id="30">0</label>/3]
+		<br />
+		</div>
+		<div id="LexDivina">
+		<input type="button" value="+" id="inc" onclick="incNumber(LexDivina)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(LexDivina)"/>
+		<img src="img/26.gif" alt="LexDivina" style="width:20px;height:20px;display:inline;">
+		<span title="">LexDivina</span> [<label id="26">0</label>/5]
+		<br />
+		</div>
+		<div id="LexAeterna" hidden>>>
+		<input type="button" value="+" id="inc" onclick="incNumber(LexAeterna)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(LexAeterna)"/>
+		<img src="img/31.gif" alt="LexAeterna" style="width:20px;height:20px;display:inline;">
+		<span title="">LexAeterna</span> [<label id="31">0</label>/5]
+		<br />
+		</div>
+		<div id="Judex">
+		<input type="button" value="+" id="inc" onclick="incNumber(Judex)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Judex)"/>
+		<img src="img/27.gif" alt="Judex" style="width:20px;height:20px;display:inline;">
+		<span title="">Judex</span> [<label id="27">0</label>/10]
+		<br />
+		</div>
+		<div id="AdvancedMaceMastery">
+		<input type="button" value="+" id="inc" onclick="incNumber(AdvancedMaceMastery)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(AdvancedMaceMastery)"/>
+		<img src="img/28.gif" alt="AdvancedMaceMastery" style="width:20px;height:20px;display:inline;">
+		<span title="">AdvancedMaceMastery</span> [<label id="28">0</label>/10]
+		<br />
+		</div>
+		<div id="Basilica" hidden>**
+		<input type="button" value="+" id="inc" onclick="incNumber(Basilica)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(Basilica)"/>
+		<img src="img/32.gif" alt="Basilica" style="width:20px;height:20px;display:inline;">
+		<span title="">Basilica</span> [<label id="32">0</label>/5]
+		<br />
+		</div>
+		<div id="HolyWard">
+		<input type="button" value="+" id="inc" onclick="incNumber(HolyWard)"/>
+		<input type="button" value="-" id="dec" onclick="decNumber(HolyWard)"/>
+		<img src="img/33.gif" alt="HolyWard" style="width:20px;height:20px;display:inline;">
+		<span title="">HolyWard</span> [<label id="33">0</label>/5]
+		<br />
+		</div>
+
+	</fieldset>
+
+	<input type="share" name="share" value="Share"><input type="button" value = "Share" onclick="send()" /><input type="button" value = "Reset" onclick="history.go(0)" />
+</body>
