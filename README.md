@@ -13,7 +13,15 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 
 ## RoadMap
 
-- [ ] get img of all spells
-- [x] create page with 
-- [ ] create template for hero page
-- [ ] create template for spell page
+- [x] use skilltree template
+- [x] show/hide skill with/without prerequis
+- [ ] Use share ability
+- [x] reset button
+- [ ] welcome page
+- [ ] create lord knight Skilltree
+- [ ] create high wizzard Skilltree
+- [ ] create Master Smith Skilltree 
+- [x] create High Priest Skilltree
+- [ ] create Champion Skilltree
+- [ ] create Assassin Cross Skilltree
+- [ ] create Sniper Skilltree
