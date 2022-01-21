@@ -127,8 +127,8 @@ function decNumber(skill) {
 /*
  * Get Parameters from URI
  */
-const qs_base64 = window.location.search;
-var queryString = atob(qs_base64);
+const qsBase64 = window.location.search;
+var queryString = atob(qsBase64);
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
