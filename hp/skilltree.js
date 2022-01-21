@@ -3,6 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
+console.log("-- test1 --");
 const queryString = window.location.search;
 //decryptMD5
 const urlParams = new URLSearchParams(queryString);
