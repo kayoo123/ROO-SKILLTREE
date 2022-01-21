@@ -19,15 +19,15 @@ function loadSkill(skill) {
 }
 
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	loadSkill(HolyLight);
-let DemonBane = 		['2', '0', '10'];	loadSkill(DemonBane);
-let Heal = 			['3', '0', '10'];	loadSkill(Heal);
-let Teleport = 			['4', '0', '1'];	loadSkill(Teleport);
-let Blessing =  		['5', '0', '10'];	loadSkill(Blessing);
-let SignumCrucis = 		['6', '0', '10'];	loadSkill(SignumCrucis);
-let Angelus = 			['7', '0', '10'];	loadSkill(Angelus);
-let IncreaseAgility = 		['8', '0', '5'];	loadSkill(IncreaseAgility);
-let KyrieEleison = 		['9', '0', '10'];	loadSkill(KyrieEleison);
+let HolyLight = 		['1', '0', '5'];	
+let DemonBane = 		['2', '0', '10'];	
+let Heal = 			['3', '0', '10'];	Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
+let Teleport = 			['4', '0', '1'];	Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+let Blessing =  		['5', '0', '10'];	
+let SignumCrucis = 		['6', '0', '10'];	
+let Angelus = 			['7', '0', '10'];	
+let IncreaseAgility = 		['8', '0', '5'];	
+let KyrieEleison = 		['9', '0', '10'];	
 
 let Magnificat = 		['10', '0', '5'];	
 let Resurection = 		['11', '0', '4'];	
