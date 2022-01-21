@@ -3,51 +3,48 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-// [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];
-let DemonBane = 		['2', '0', '10'];
-let Heal = 			['3', '0', '10'];
-let Teleport = 			['4', '0', '1'];
-let Blessing =  		['5', '0', '10'];
-let SignumCrucis = 		['6', '0', '10'];
-let Angelus = 			['7', '0', '10'];
-let IncreaseAgility = 		['8', '0', '5'];
-let KyrieEleison = 		['9', '0', '10'];
-
-let Magnificat = 		['10', '0', '5'];
-let Resurection = 		['11', '0', '4'];
-let Sanctuary = 		['12', '0', '10'];
-let MaceMastery = 		['13', '0', '10'];
-let Recovery =  		['14', '0', '3'];
-let ImpositioManus =		['15', '0', '10'];
-let TurnUndead = 		['16', '0', '10'];
-let Pneuma = 			['17', '0', '10'];
-let HolyJudgment = 		['18', '0', '10'];
-let Aspersio =  		['19', '0', '2'];
-let ZenHeart = 			['20', '0', '10'];
-let MagnusExorcismus = 		['21', '0', '10'];
-let SafetyWall = 		['22', '0', '10'];
-let Gloria = 			['23', '0', '5'];
-
-let Meditatio = 		['24', '0', '10'];
-let Assumptio = 		['25', '0', '10'];
-let LexDivina = 		['26', '0', '5'];
-let Judex = 			['27', '0', '10'];
-let AdvancedMaceMastery =	['28', '0', '10'];
-let ManaRecharge =		['29', '0', '5'];
-let Suffragium = 		['30', '0', '3'];
-let LexAeterna = 		['31', '0', '5'];
-let Basilica = 			['32', '0', '5'];
-let HolyWard =  		['33', '0', '10'];
-
-
 const queryString = window.location.search;
 console.log(queryString);
 //md5
 const urlParams = new URLSearchParams(queryString);
 
-Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
-Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+
+// [Id, currentLevel, MaxLevel]
+let HolyLight = 		['1', '0', '5'];	HolyLight[1] = urlParams.get('HolyLight'); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
+let DemonBane = 		['2', '0', '10'];	DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
+let Heal = 			['3', '0', '10'];	Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
+let Teleport = 			['4', '0', '1'];	Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+let Blessing =  		['5', '0', '10'];	Blessing[1] = urlParams.get('Blessing'); document.getElementById(Blessing[0]).innerHTML = Blessing[1];
+let SignumCrucis = 		['6', '0', '10'];	SignumCrucis[1] = urlParams.get('SignumCrucis'); document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1];
+let Angelus = 			['7', '0', '10'];	Angelus[1] = urlParams.get('Angelus'); document.getElementById(Angelus[0]).innerHTML = Angelus[1];
+let IncreaseAgility = 		['8', '0', '5'];	IncreaseAgility[1] = urlParams.get('IncreaseAgility'); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1];
+let KyrieEleison = 		['9', '0', '10'];	KyrieEleison[1] = urlParams.get('KyrieEleison'); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1];
+
+let Magnificat = 		['10', '0', '5'];	
+let Resurection = 		['11', '0', '4'];	
+let Sanctuary = 		['12', '0', '10'];	
+let MaceMastery = 		['13', '0', '10'];	
+let Recovery =  		['14', '0', '3'];	
+let ImpositioManus =		['15', '0', '10'];	
+let TurnUndead = 		['16', '0', '10'];	
+let Pneuma = 			['17', '0', '10'];	
+let HolyJudgment = 		['18', '0', '10'];	
+let Aspersio =  		['19', '0', '2'];	
+let ZenHeart = 			['20', '0', '10'];	
+let MagnusExorcismus = 		['21', '0', '10'];	
+let SafetyWall = 		['22', '0', '10'];	
+let Gloria = 			['23', '0', '5'];	
+
+let Meditatio = 		['24', '0', '10'];	
+let Assumptio = 		['25', '0', '10'];	
+let LexDivina = 		['26', '0', '5'];	
+let Judex = 			['27', '0', '10'];	
+let AdvancedMaceMastery =	['28', '0', '10'];	
+let ManaRecharge =		['29', '0', '5'];	
+let Suffragium = 		['30', '0', '3'];	
+let LexAeterna = 		['31', '0', '5'];	
+let Basilica = 			['32', '0', '5'];	
+let HolyWard =  		['33', '0', '10'];	
 
 
 function incNumber(skill) {
