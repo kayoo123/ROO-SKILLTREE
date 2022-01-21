@@ -3,8 +3,8 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test5 --");
-console.log("-- oneline --");
+console.log("-- test6 --");
+console.log("-- print --");
 
 const queryString = window.location.search;
 //decryptMD5
@@ -68,6 +68,7 @@ function showSkill() {
 	if (LexDivina[1] >= 5) { document.getElementById("LexAeterna").setAttribute("style", "display:block"); }
 	if (KyrieEleison[1] >= 5) { document.getElementById("Basilica").setAttribute("style", "display:block"); }
 }
+
 function hideSkill() {
 	if (DemonBane[1] < 5) { SignumCrucis[1] = 0; document.getElementById(SignumCrucis[0]).innerHTML = 0; document.getElementById("SignumCrucis").setAttribute("style", "display:none"); }
 	if (Heal[1] < 5) { Angelus[1] = 0; document.getElementById(Angelus[0]).innerHTML = 0; document.getElementById("Angelus").setAttribute("style", "display:none"); }
@@ -109,3 +110,5 @@ function decNumber(skill) {
 	hideSkill();
 }
 
+jobLevel();
+showSkill();
