@@ -4,6 +4,7 @@ var job2 = 0;
 var job3 = 0;
 
 const queryString = window.location.search;
+//decryptMD5
 const urlParams = new URLSearchParams(queryString);
 
 function jobLevel() {
