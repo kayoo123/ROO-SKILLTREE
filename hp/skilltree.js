@@ -3,10 +3,11 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-//console.log("-- test6 --");
+//console.log("-- test1 --");
 
 // Get URI Params
 const queryString = window.location.search;
+console.log(queryString);
 //decryptMD5
 const urlParams = new URLSearchParams(queryString);
 
