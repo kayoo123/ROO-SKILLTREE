@@ -3,25 +3,18 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- oneline 3 --");
-
-// Get URI Params
-const queryString = window.location.search;
-console.log(queryString);
-//decryptMD5
-const urlParams = new URLSearchParams(queryString);
-
+console.log("-- test final --");
 
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	if(urlParams.get('HolyLight')) { HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1]; }
-let DemonBane = 		['2', '0', '10'];	if(urlParams.get('DemonBane')) { DemonBane[1] = parseFloat(urlParams.get('DemonBane')); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1]; }
-let Heal = 			['3', '0', '10'];	if(urlParams.get('Heal')) { Heal[1] = parseFloat(urlParams.get('Heal')); document.getElementById(Heal[0]).innerHTML = Heal[1]; }
-let Teleport = 			['4', '0', '1'];	if(urlParams.get('Teleport')) { Teleport[1] = parseFloat(urlParams.get('Teleport')); document.getElementById(Teleport[0]).innerHTML = Teleport[1]; }
-let Blessing =  		['5', '0', '10'];	if(urlParams.get('Blessing')) { Blessing[1] = parseFloat(urlParams.get('Blessing')); document.getElementById(Blessing[0]).innerHTML = Blessing[1]; }
-let SignumCrucis = 		['6', '0', '10'];	if(urlParams.get('SignumCrucis')) { SignumCrucis[1] = parseFloat(urlParams.get('SignumCrucis')); document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1]; }
-let Angelus = 			['7', '0', '10'];	if(urlParams.get('Angelus')) { Angelus[1] = parseFloat(urlParams.get('Angelus')); document.getElementById(Angelus[0]).innerHTML = Angelus[1]; }
-let IncreaseAgility = 		['8', '0', '5'];	if(urlParams.get('IncreaseAgility')) { IncreaseAgility[1] = parseFloat(urlParams.get('IncreaseAgility')); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1]; }
-let KyrieEleison = 		['9', '0', '10'];	if(urlParams.get('KyrieEleison')) { KyrieEleison[1] = parseFloat(urlParams.get('KyrieEleison')); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1]; }
+let HolyLight = 		['1', '0', '5'];	
+let DemonBane = 		['2', '0', '10'];	
+let Heal = 			['3', '0', '10'];	
+let Teleport = 			['4', '0', '1'];	
+let Blessing =  		['5', '0', '10'];	
+let SignumCrucis = 		['6', '0', '10'];	
+let Angelus = 			['7', '0', '10'];	
+let IncreaseAgility = 		['8', '0', '5'];	
+let KyrieEleison = 		['9', '0', '10'];	
 
 let Magnificat = 		['10', '0', '5'];	
 let Resurection = 		['11', '0', '4'];	
@@ -111,6 +104,49 @@ function decNumber(skill) {
 	jobLevel();
 	hideSkill();
 }
+
+
+// Get URI Params
+const queryString = window.location.search;
+console.log(queryString);
+//decryptMD5
+const urlParams = new URLSearchParams(queryString);
+
+if(urlParams.get('HolyLight')) { HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1]; }
+if(urlParams.get('DemonBane')) { DemonBane[1] = parseFloat(urlParams.get('DemonBane')); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1]; }
+if(urlParams.get('Heal')) { Heal[1] = parseFloat(urlParams.get('Heal')); document.getElementById(Heal[0]).innerHTML = Heal[1]; }
+if(urlParams.get('Teleport')) { Teleport[1] = parseFloat(urlParams.get('Teleport')); document.getElementById(Teleport[0]).innerHTML = Teleport[1]; }
+if(urlParams.get('Blessing')) { Blessing[1] = parseFloat(urlParams.get('Blessing')); document.getElementById(Blessing[0]).innerHTML = Blessing[1]; }
+if(urlParams.get('SignumCrucis')) { SignumCrucis[1] = parseFloat(urlParams.get('SignumCrucis')); document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1]; }
+if(urlParams.get('Angelus')) { Angelus[1] = parseFloat(urlParams.get('Angelus')); document.getElementById(Angelus[0]).innerHTML = Angelus[1]; }
+if(urlParams.get('IncreaseAgility')) { IncreaseAgility[1] = parseFloat(urlParams.get('IncreaseAgility')); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1]; }
+if(urlParams.get('KyrieEleison')) { KyrieEleison[1] = parseFloat(urlParams.get('KyrieEleison')); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1]; }
+
+if(urlParams.get('Magnificat')) { Magnificat[1] = parseFloat(urlParams.get('Magnificat')); document.getElementById(Magnificat[0]).innerHTML = Magnificat[1]; }
+if(urlParams.get('Resurection')) { Resurection[1] = parseFloat(urlParams.get('Resurection')); document.getElementById(Resurection[0]).innerHTML = Resurection[1]; }
+if(urlParams.get('Sanctuary')) { Sanctuary[1] = parseFloat(urlParams.get('Sanctuary')); document.getElementById(Sanctuary[0]).innerHTML = Sanctuary[1]; }
+if(urlParams.get('MaceMastery')) { MaceMastery[1] = parseFloat(urlParams.get('MaceMastery')); document.getElementById(MaceMastery[0]).innerHTML = MaceMastery[1]; }
+if(urlParams.get('Recovery')) { Recovery[1] = parseFloat(urlParams.get('Recovery')); document.getElementById(Recovery[0]).innerHTML = Recovery[1]; }
+if(urlParams.get('ImpositioManus')) { ImpositioManus[1] = parseFloat(urlParams.get('ImpositioManus')); document.getElementById(ImpositioManus[0]).innerHTML = ImpositioManus[1]; }
+if(urlParams.get('TurnUndead')) { TurnUndead[1] = parseFloat(urlParams.get('TurnUndead')); document.getElementById(TurnUndead[0]).innerHTML = TurnUndead[1]; }
+if(urlParams.get('Pneuma')) { Pneuma[1] = parseFloat(urlParams.get('Pneuma')); document.getElementById(Pneuma[0]).innerHTML = Pneuma[1]; }
+if(urlParams.get('HolyJudgment')) { HolyJudgment[1] = parseFloat(urlParams.get('HolyJudgment')); document.getElementById(HolyJudgment[0]).innerHTML = HolyJudgment[1]; }
+if(urlParams.get('Aspersio')) { Aspersio[1] = parseFloat(urlParams.get('Aspersio')); document.getElementById(Aspersio[0]).innerHTML = Aspersio[1]; }
+if(urlParams.get('ZenHeart')) { ZenHeart[1] = parseFloat(urlParams.get('ZenHeart')); document.getElementById(ZenHeart[0]).innerHTML = ZenHeart[1]; }
+if(urlParams.get('MagnusExorcismus')) { MagnusExorcismus[1] = parseFloat(urlParams.get('MagnusExorcismus')); document.getElementById(MagnusExorcismus[0]).innerHTML = MagnusExorcismus[1]; }
+if(urlParams.get('SafetyWall')) { SafetyWall[1] = parseFloat(urlParams.get('SafetyWall')); document.getElementById(SafetyWall[0]).innerHTML = SafetyWall[1]; }
+if(urlParams.get('Gloria')) { Gloria[1] = parseFloat(urlParams.get('Gloria')); document.getElementById(Gloria[0]).innerHTML = Gloria[1]; }
+
+if(urlParams.get('Meditatio')) { Meditatio[1] = parseFloat(urlParams.get('Meditatio')); document.getElementById(Meditatio[0]).innerHTML = Meditatio[1]; }
+if(urlParams.get('Assumptio')) { Assumptio[1] = parseFloat(urlParams.get('Assumptio')); document.getElementById(Assumptio[0]).innerHTML = Assumptio[1]; }
+if(urlParams.get('LexDivina')) { LexDivina[1] = parseFloat(urlParams.get('LexDivina')); document.getElementById(LexDivina[0]).innerHTML = LexDivina[1]; }
+if(urlParams.get('Judex')) { Judex[1] = parseFloat(urlParams.get('Judex')); document.getElementById(Judex[0]).innerHTML = Judex[1]; }
+if(urlParams.get('AdvancedMaceMastery')) { AdvancedMaceMastery[1] = parseFloat(urlParams.get('AdvancedMaceMastery')); document.getElementById(AdvancedMaceMastery[0]).innerHTML = AdvancedMaceMastery[1]; }
+if(urlParams.get('ManaRecharge')) { ManaRecharge[1] = parseFloat(urlParams.get('ManaRecharge')); document.getElementById(ManaRecharge[0]).innerHTML = ManaRecharge[1]; }
+if(urlParams.get('Suffragium')) { Suffragium[1] = parseFloat(urlParams.get('Suffragium')); document.getElementById(Suffragium[0]).innerHTML = Suffragium[1]; }
+if(urlParams.get('LexAeterna')) { LexAeterna[1] = parseFloat(urlParams.get('LexAeterna')); document.getElementById(LexAeterna[0]).innerHTML = LexAeterna[1]; }
+if(urlParams.get('Basilica')) { Basilica[1] = parseFloat(urlParams.get('Basilica')); document.getElementById(Basilica[0]).innerHTML = Basilica[1]; }
+if(urlParams.get('HolyWard')) { HolyWard[1] = parseFloat(urlParams.get('HolyWard')); document.getElementById(HolyWard[0]).innerHTML = HolyWard[1]; }
 
 jobLevel();
 showSkill();
