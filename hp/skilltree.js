@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- share 2 --");
+console.log("-- share 3 --");
 
 /*
  * [Id, currentLevel, maxLevel]
@@ -123,7 +123,7 @@ function decNumber(skill) {
 }
 
 function shareLink() {
-	q_path = "&HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1] + "&Magnificat=" + Magnificat[1] + "&Resurection=" + Resurection[1] + "&Sanctuary=" + Sanctuary[1] + "&MaceMastery=" + MaceMastery[1] + "&Recovery=" + Recovery[1] + "&ImpositioManus=" + ImpositioManus[1] + "&TurnUndead=" + TurnUndead[1] + "&Pneuma=" + Pneuma[1] + "&HolyJudgment=" + HolyJudgment[1] + "&Aspersio=" + Aspersio[1] + "&ZenHeart=" + ZenHeart[1] + "&MagnusExorcismus=" + MagnusExorcismus[1] + "&SafetyWall=" + SafetyWall[1] + "&Gloria=" + Gloria[1] + "&Meditatio=" + Meditatio[1] + "&Assumptio=" + Assumptio[1] + "&LexDivina=" + LexDivina[1] + "&Judex=" + Judex[1] + "&AdvancedMaceMastery=" + AdvancedMaceMastery[1] + "&ManaRecharge=" + ManaRecharge[1] + "&Suffragium=" + Suffragium[1] + "&LexAeterna=" + LexAeterna[1] + "&Basilica=" + Basilica[1] + "&HolyWard=" + HolyWard[1]
+	q_path = window.location + "&HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1] + "&Magnificat=" + Magnificat[1] + "&Resurection=" + Resurection[1] + "&Sanctuary=" + Sanctuary[1] + "&MaceMastery=" + MaceMastery[1] + "&Recovery=" + Recovery[1] + "&ImpositioManus=" + ImpositioManus[1] + "&TurnUndead=" + TurnUndead[1] + "&Pneuma=" + Pneuma[1] + "&HolyJudgment=" + HolyJudgment[1] + "&Aspersio=" + Aspersio[1] + "&ZenHeart=" + ZenHeart[1] + "&MagnusExorcismus=" + MagnusExorcismus[1] + "&SafetyWall=" + SafetyWall[1] + "&Gloria=" + Gloria[1] + "&Meditatio=" + Meditatio[1] + "&Assumptio=" + Assumptio[1] + "&LexDivina=" + LexDivina[1] + "&Judex=" + Judex[1] + "&AdvancedMaceMastery=" + AdvancedMaceMastery[1] + "&ManaRecharge=" + ManaRecharge[1] + "&Suffragium=" + Suffragium[1] + "&LexAeterna=" + LexAeterna[1] + "&Basilica=" + Basilica[1] + "&HolyWard=" + HolyWard[1]
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
 	
