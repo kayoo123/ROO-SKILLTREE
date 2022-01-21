@@ -40,6 +40,16 @@ let LexAeterna = 		['31', '0', '5'];
 let Basilica = 			['32', '0', '5'];
 let HolyWard =  		['33', '0', '10'];
 
+
+const queryString = window.location.search;
+console.log(queryString);
+//md5
+const urlParams = new URLSearchParams(queryString);
+
+Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
+Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+
+
 function incNumber(skill) {
 	i = skill[1]		
         if (skill[1] < skill[2]) {
@@ -99,14 +109,4 @@ function decNumber(skill) {
 	if (LexDivina[1] < 5) { LexAeterna[1] = 0; document.getElementById(LexAeterna[0]).innerHTML = 0; document.getElementById("LexAeterna").setAttribute("style", "display:none"); }
 	if (KyrieEleison[1] < 5) { Basilica[1] = 0; document.getElementById(Basilica[0]).innerHTML = 0; document.getElementById("Basilica").setAttribute("style", "display:none"); }
 }
-
-
-const queryString = window.location.search;
-console.log(queryString);
-//md5
-const urlParams = new URLSearchParams(queryString);
-
-Heal[1] = urlParams.get('Heal'); 
-document.getElementById(Heal[0]).innerHTML = urlParams.get('Heal');
-
 
