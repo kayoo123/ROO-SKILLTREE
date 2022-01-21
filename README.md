@@ -2,11 +2,14 @@
 
 ### URL: https://kayoo123.github.io/ROO-SKILLTREE/
 
-This is a fan made website which aims to provide accurate information on skilltree of our game Ragnarok Origin
+Hello everyone,
+I would like to create a small tool to help the Ragnarok Origin community to manage their talent tree.
 
-For that, it receives help from the community by receiving suggestions, ideas and game data via this Github repositories.
+I am not a developer and have no knowledge of HTML and JavaScript language.
+So please be kind with my code ^^
 
-**All help is appreciated!**
+
+**Any help is welcome !**
 
 Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if you want to give a suggestion or report bugs that happened on the website.
 
@@ -14,10 +17,13 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 ## RoadMap
 
 - [x] use skilltree template
-- [x] show/hide skill with/without prerequis
-- [ ] Use share ability
+- [x] show skill with prerequis
+- [x] hide skill wihtout prerequis 
+- [x] Use share ability
+- [ ] Compress qstring when share
 - [x] reset button
 - [ ] welcome page
+- [ ] footer
 - [ ] create lord knight Skilltree
 - [ ] create high wizzard Skilltree
 - [ ] create Master Smith Skilltree 
