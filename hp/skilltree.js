@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- share 4 --");
+console.log("-- share 5 --");
 
 /*
  * [Id, currentLevel, maxLevel]
@@ -123,8 +123,15 @@ function decNumber(skill) {
 }
 
 function shareLink() {
-	q_path = "HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1]
-	+ "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1]
+	q_path = if (HolyLight[1] != 0) { "&HolyLight=" + HolyLight[1] } \
+		+ if (DemonBane[1] != 0) { "&DemonBane=" + DemonBane[1] } \
+		+ if (Heal[1] != 0) { "&Heal=" + Heal[1] } \
+		+ if (Teleport[1] != 0) { "&Teleport=" + Teleport[1] } \ 
+		+ if (Blessing[1] != 0) { "&Blessing=" + Blessing[1] } \
+		+ if (SignumCrucis[1] != 0) { "&SignumCrucis=" + SignumCrucis[1] } \
+		+ if (Angelus[1] != 0) { "&Angelus=" + Angelus[1] } \
+		+ if (IncreaseAgility[1] != 0) { "&IncreaseAgility=" + IncreaseAgility[1] } \
+		+ if (KyrieEleison[1] != 0) { "&KyrieEleison=" + KyrieEleison[1]} \
 
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
