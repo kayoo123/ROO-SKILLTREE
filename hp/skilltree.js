@@ -3,8 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- oneline --");
-
+console.log("-- oneline 2 --");
 
 // Get URI Params
 const queryString = window.location.search;
@@ -13,17 +12,16 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
 
-
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	
+let HolyLight = 		['1', '0', '5'];	HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
 let DemonBane = 		['2', '0', '10'];	DemonBane[1] = parseFloat(urlParams.get('DemonBane')); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
-let Heal = 			['3', '0', '10'];	
-let Teleport = 			['4', '0', '1'];	
-let Blessing =  		['5', '0', '10'];	
-let SignumCrucis = 		['6', '0', '10'];	
-let Angelus = 			['7', '0', '10'];	
-let IncreaseAgility = 		['8', '0', '5'];	
-let KyrieEleison = 		['9', '0', '10'];	
+let Heal = 			['3', '0', '10'];	Heal[1] = parseFloat(urlParams.get('Heal')); document.getElementById(Heal[0]).innerHTML = Heal[1];
+let Teleport = 			['4', '0', '1'];	Teleport[1] = parseFloat(urlParams.get('Teleport')); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+let Blessing =  		['5', '0', '10'];	Blessing[1] = parseFloat(urlParams.get('Blessing')); document.getElementById(Blessing[0]).innerHTML = Blessing[1];
+let SignumCrucis = 		['6', '0', '10'];	SignumCrucis[1] = parseFloat(urlParams.get('SignumCrucis')); document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1];
+let Angelus = 			['7', '0', '10'];	Angelus[1] = parseFloat(urlParams.get('Angelus')); document.getElementById(Angelus[0]).innerHTML = Angelus[1];
+let IncreaseAgility = 		['8', '0', '5'];	IncreaseAgility[1] = parseFloat(urlParams.get('IncreaseAgility')); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1];
+let KyrieEleison = 		['9', '0', '10'];	KyrieEleison[1] = parseFloat(urlParams.get('KyrieEleison')); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1];
 
 let Magnificat = 		['10', '0', '5'];	
 let Resurection = 		['11', '0', '4'];	
@@ -50,8 +48,6 @@ let Suffragium = 		['30', '0', '3'];
 let LexAeterna = 		['31', '0', '5'];	
 let Basilica = 			['32', '0', '5'];	
 let HolyWard =  		['33', '0', '10'];	
-
-
 
 
 function jobLevel() {
