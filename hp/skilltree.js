@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- share 1 --");
+console.log("-- share 2 --");
 
 /*
  * [Id, currentLevel, maxLevel]
