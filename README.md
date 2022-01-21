@@ -22,6 +22,7 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [x] Use share ability
 - [ ] Compress qstring when share
 - [x] reset button
+- [ ] add infobull
 - [ ] welcome page
 - [ ] footer
 - [ ] create lord knight Skilltree
