@@ -129,8 +129,8 @@ function shareLink() {
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
 	
-	document.getElementById("alarmmsg").innerHTML = "Link added into clipboard..!";
-	setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 3000);
+	document.getElementById("alarmmsg").innerHTML = "<...Link added into clipboard...>";
+	setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
 }
 
 /*
