@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-//console.log("-- test1 --");
+console.log("-- multiligne --");
 
 // Get URI Params
 const queryString = window.location.search;
@@ -12,41 +12,43 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
-let DemonBane = 		['2', '0', '10'];	DemonBane[1] = parseFloat(urlParams.get('DemonBane')); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
-let Heal = 			['3', '0', '10'];	Heal[1] = parseFloat(urlParams.get('Heal')); document.getElementById(Heal[0]).innerHTML = Heal[1];
-let Teleport = 			['4', '0', '1'];	Teleport[1] = parseFloat(urlParams.get('Teleport')); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
-let Blessing =  		['5', '0', '10'];	Blessing[1] = parseFloat(urlParams.get('Blessing')); document.getElementById(Blessing[0]).innerHTML = Blessing[1];
-let SignumCrucis = 		['6', '0', '10'];	SignumCrucis[1] = parseFloat(urlParams.get('SignumCrucis')); document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1];
-let Angelus = 			['7', '0', '10'];	Angelus[1] = parseFloat(urlParams.get('Angelus')); document.getElementById(Angelus[0]).innerHTML = Angelus[1];
-let IncreaseAgility = 		['8', '0', '5'];	IncreaseAgility[1] = parseFloat(urlParams.get('IncreaseAgility')); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1];
-let KyrieEleison = 		['9', '0', '10'];	KyrieEleison[1] = parseFloat(urlParams.get('KyrieEleison')); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1];
+let HolyLight = 		['1', '0', '5'];	
+let DemonBane = 		['2', '0', '10'];	
+DemonBane[1] = parseFloat(urlParams.get('DemonBane')); 
+document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
+let Heal = 			['3', '0', '10'];	
+let Teleport = 			['4', '0', '1'];	
+let Blessing =  		['5', '0', '10'];	
+let SignumCrucis = 		['6', '0', '10'];	
+let Angelus = 			['7', '0', '10'];	
+let IncreaseAgility = 		['8', '0', '5'];	
+let KyrieEleison = 		['9', '0', '10'];	
 
-let Magnificat = 		['10', '0', '5'];	Magnificat[1] = parseFloat(urlParams.get('Magnificat')); document.getElementById(Magnificat[0]).innerHTML = Magnificat[1];
-let Resurection = 		['11', '0', '4'];	Resurection[1] = parseFloat(urlParams.get('Resurection')); document.getElementById(Resurection[0]).innerHTML = Resurection[1];
-let Sanctuary = 		['12', '0', '10'];	Sanctuary[1] = parseFloat(urlParams.get('Sanctuary')); document.getElementById(Sanctuary[0]).innerHTML = Sanctuary[1];
-let MaceMastery = 		['13', '0', '10'];	MaceMastery[1] = parseFloat(urlParams.get('MaceMastery')); document.getElementById(MaceMastery[0]).innerHTML = MaceMastery[1];
-let Recovery =  		['14', '0', '3'];	Recovery[1] = parseFloat(urlParams.get('Recovery')); document.getElementById(Recovery[0]).innerHTML = Recovery[1];
-let ImpositioManus =		['15', '0', '10'];	ImpositioManus[1] = parseFloat(urlParams.get('ImpositioManus')); document.getElementById(ImpositioManus[0]).innerHTML = ImpositioManus[1];
-let TurnUndead = 		['16', '0', '10'];	TurnUndead[1] = parseFloat(urlParams.get('TurnUndead')); document.getElementById(TurnUndead[0]).innerHTML = TurnUndead[1];
-let Pneuma = 			['17', '0', '10'];	Pneuma[1] = parseFloat(urlParams.get('Pneuma')); document.getElementById(Pneuma[0]).innerHTML = Pneuma[1];
-let HolyJudgment = 		['18', '0', '10'];	HolyJudgment[1] = parseFloat(urlParams.get('HolyJudgment')); document.getElementById(HolyJudgment[0]).innerHTML = HolyJudgment[1];
-let Aspersio =  		['19', '0', '2'];	Aspersio[1] = parseFloat(urlParams.get('Aspersio')); document.getElementById(Aspersio[0]).innerHTML = Aspersio[1];
-let ZenHeart = 			['20', '0', '10'];	ZenHeart[1] = parseFloat(urlParams.get('ZenHeart')); document.getElementById(ZenHeart[0]).innerHTML = ZenHeart[1];
-let MagnusExorcismus = 		['21', '0', '10'];	MagnusExorcismus[1] = parseFloat(urlParams.get('MagnusExorcismus')); document.getElementById(MagnusExorcismus[0]).innerHTML = MagnusExorcismus[1];
-let SafetyWall = 		['22', '0', '10'];	SafetyWall[1] = parseFloat(urlParams.get('SafetyWall')); document.getElementById(SafetyWall[0]).innerHTML = SafetyWall[1];
-let Gloria = 			['23', '0', '5'];	Gloria[1] = parseFloat(urlParams.get('Gloria')); document.getElementById(Gloria[0]).innerHTML = Gloria[1];
+let Magnificat = 		['10', '0', '5'];	
+let Resurection = 		['11', '0', '4'];	
+let Sanctuary = 		['12', '0', '10'];	
+let MaceMastery = 		['13', '0', '10'];	
+let Recovery =  		['14', '0', '3'];	
+let ImpositioManus =		['15', '0', '10'];	
+let TurnUndead = 		['16', '0', '10'];	
+let Pneuma = 			['17', '0', '10'];	
+let HolyJudgment = 		['18', '0', '10'];	
+let Aspersio =  		['19', '0', '2'];	
+let ZenHeart = 			['20', '0', '10'];	
+let MagnusExorcismus = 		['21', '0', '10'];	
+let SafetyWall = 		['22', '0', '10'];	
+let Gloria = 			['23', '0', '5'];	
 
-let Meditatio = 		['24', '0', '10'];	Meditatio[1] = parseFloat(urlParams.get('Meditatio')); document.getElementById(Meditatio[0]).innerHTML = Meditatio[1];
-let Assumptio = 		['25', '0', '10'];	Assumptio[1] = parseFloat(urlParams.get('Assumptio')); document.getElementById(Assumptio[0]).innerHTML = Assumptio[1];
-let LexDivina = 		['26', '0', '5'];	LexDivina[1] = parseFloat(urlParams.get('LexDivina')); document.getElementById(LexDivina[0]).innerHTML = LexDivina[1];
-let Judex = 			['27', '0', '10'];	Judex[1] = parseFloat(urlParams.get('Judex')); document.getElementById(Judex[0]).innerHTML = Judex[1];
-let AdvancedMaceMastery =	['28', '0', '10'];	AdvancedMaceMastery[1] = parseFloat(urlParams.get('AdvancedMaceMastery')); document.getElementById(AdvancedMaceMastery[0]).innerHTML = AdvancedMaceMastery[1];
-let ManaRecharge =		['29', '0', '5'];	ManaRecharge[1] = parseFloat(urlParams.get('ManaRecharge')); document.getElementById(ManaRecharge[0]).innerHTML = ManaRecharge[1];
-let Suffragium = 		['30', '0', '3'];	Suffragium[1] = parseFloat(urlParams.get('Suffragium')); document.getElementById(Suffragium[0]).innerHTML = Suffragium[1];
-let LexAeterna = 		['31', '0', '5'];	LexAeterna[1] = parseFloat(urlParams.get('LexAeterna')); document.getElementById(LexAeterna[0]).innerHTML = LexAeterna[1];
-let Basilica = 			['32', '0', '5'];	Basilica[1] = parseFloat(urlParams.get('Basilica')); document.getElementById(Basilica[0]).innerHTML = Basilica[1];
-let HolyWard =  		['33', '0', '10'];	HolyWard[1] = parseFloat(urlParams.get('HolyWard')); document.getElementById(HolyWard[0]).innerHTML = HolyWard[1];
+let Meditatio = 		['24', '0', '10'];	
+let Assumptio = 		['25', '0', '10'];	
+let LexDivina = 		['26', '0', '5'];	
+let Judex = 			['27', '0', '10'];	
+let AdvancedMaceMastery =	['28', '0', '10'];	
+let ManaRecharge =		['29', '0', '5'];	
+let Suffragium = 		['30', '0', '3'];	
+let LexAeterna = 		['31', '0', '5'];	
+let Basilica = 			['32', '0', '5'];	
+let HolyWard =  		['33', '0', '10'];	
 
 
 function jobLevel() {
