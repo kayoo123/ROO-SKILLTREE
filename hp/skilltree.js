@@ -3,8 +3,8 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test4 --");
-console.log("-- parseFloat --");
+console.log("-- test5 --");
+console.log("-- oneline --");
 
 const queryString = window.location.search;
 //decryptMD5
@@ -12,9 +12,7 @@ const urlParams = new URLSearchParams(queryString);
 
 // [Id, currentLevel, MaxLevel]
 let HolyLight = 		['1', '0', '5'];	
-let DemonBane = 		['2', '0', '10'];	//DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
-DemonBane[1] = parseFloat(urlParams.get('DemonBane')); 
-//document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
+let DemonBane = 		['2', '0', '10'];	DemonBane[1] = parseFloat(urlParams.get('DemonBane')); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
 let Heal = 			['3', '0', '10'];	
 let Teleport = 			['4', '0', '1'];	
 let Blessing =  		['5', '0', '10'];	
@@ -49,12 +47,6 @@ let LexAeterna = 		['31', '0', '5'];
 let Basilica = 			['32', '0', '5'];	
 let HolyWard =  		['33', '0', '10'];	
 
-/*
-console.log("-------");
-console.log(DemonBane[1]);
-jobLevel();
-console.log(job1);
-*/
 
 function jobLevel() {
 	document.getElementById("job1").innerHTML = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
