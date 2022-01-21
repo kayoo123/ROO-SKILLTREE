@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- share 3 --");
+console.log("-- share 4 --");
 
 /*
  * [Id, currentLevel, maxLevel]
@@ -128,6 +128,9 @@ function shareLink() {
 
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
+	
+	document.getElementById("alarmmsg").innerHTML = "Link added into clipboard..!";
+	setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 3000);
 }
 
 /*
