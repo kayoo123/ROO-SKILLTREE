@@ -5,6 +5,7 @@ var job3 = 0;
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
+console.log(urlParams);
 
 function jobLevel() {
 	document.getElementById("job1").innerHTML = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
@@ -14,6 +15,7 @@ function jobLevel() {
 
 function loadSkill(skill) {
 	skill[1] = urlParams.get('skill'); document.getElementById(skill[0]).innerHTML = skill[1];
+	console.log(skill[1]);
 }
 
 // [Id, currentLevel, MaxLevel]
@@ -53,6 +55,7 @@ let LexAeterna = 		['31', '0', '5'];
 let Basilica = 			['32', '0', '5'];	
 let HolyWard =  		['33', '0', '10'];	
 
+console.log("-------");
 console.log(Heal[1]);
 jobLevel();
 console.log(job1);
