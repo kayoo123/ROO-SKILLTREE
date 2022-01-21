@@ -3,8 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test base64 2 --");
-
+console.log("-- share 1 --");
 
 /*
  * [Id, currentLevel, maxLevel]
@@ -123,14 +122,16 @@ function decNumber(skill) {
 	hideSkill();
 }
 
+function shareLink() {
+	
+	//console.log(urlShare);
+}
 
 /*
  * Get Parameters from URI
  */
 const queryString = window.location.search;
-//const qsBase64 = window.location.search;
-//var queryString = atob(qsBase64);
-console.log(queryString);
+//console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
 if(urlParams.get('HolyLight')) { HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1]; }
