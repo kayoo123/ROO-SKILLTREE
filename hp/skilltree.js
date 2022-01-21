@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test base64 --");
+console.log("-- test base64 2 --");
 
 
 /*
