@@ -53,7 +53,6 @@ let HolyWard =  		['33', '0', '10'];
 console.log(Heal[1]);
 jobLevel();
 console.log(job1);
-console.log("job1");
 
 function incNumber(skill) {
 	i = skill[1]		
