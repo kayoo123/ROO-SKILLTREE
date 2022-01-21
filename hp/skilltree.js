@@ -5,7 +5,6 @@ var job3 = 0;
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-console.log(urlParams);
 
 function jobLevel() {
 	document.getElementById("job1").innerHTML = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
@@ -13,14 +12,9 @@ function jobLevel() {
 	document.getElementById("job3").innerHTML = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 }
 
-function loadSkill(skill) {
-	skill[1] = urlParams.get('skill'); document.getElementById(skill[0]).innerHTML = skill[1];
-	console.log(skill[1]);
-}
-
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	
-let DemonBane = 		['2', '0', '10'];	
+let HolyLight = 		['1', '0', '5'];	HolyLight[1] = urlParams.get('HolyLight'); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
+let DemonBane = 		['2', '0', '10'];	DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
 let Heal = 			['3', '0', '10'];	Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
 let Teleport = 			['4', '0', '1'];	Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
 let Blessing =  		['5', '0', '10'];	
