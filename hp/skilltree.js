@@ -46,6 +46,9 @@ let LexAeterna = 		['31', '0', '5'];
 let Basilica = 			['32', '0', '5'];	
 let HolyWard =  		['33', '0', '10'];	
 
+console.log(Heal[1]);
+console.log(job1);
+console.log("job1");
 
 function incNumber(skill) {
 	i = skill[1]		
