@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test md5 1 --");
+console.log("-- test base64 --");
 
 
 /*
@@ -127,9 +127,9 @@ function decNumber(skill) {
 /*
  * Get Parameters from URI
  */
-const queryString = window.location.search;
+const qs_base64 = window.location.search;
+var queryString = atob(qs_base64);
 console.log(queryString);
-//decryptMD5
 const urlParams = new URLSearchParams(queryString);
 
 if(urlParams.get('HolyLight')) { HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1]; }
