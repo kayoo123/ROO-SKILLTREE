@@ -3,8 +3,8 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test3 --");
-console.log("-- function show/hide --");
+console.log("-- test4 --");
+console.log("-- parseFloat --");
 
 const queryString = window.location.search;
 //decryptMD5
@@ -13,7 +13,7 @@ const urlParams = new URLSearchParams(queryString);
 // [Id, currentLevel, MaxLevel]
 let HolyLight = 		['1', '0', '5'];	
 let DemonBane = 		['2', '0', '10'];	//DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
-DemonBane[1] = urlParams.get('DemonBane'); 
+DemonBane[1] = parseFloat(urlParams.get('DemonBane')); 
 //document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
 let Heal = 			['3', '0', '10'];	
 let Teleport = 			['4', '0', '1'];	
