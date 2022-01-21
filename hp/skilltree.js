@@ -13,10 +13,10 @@ function jobLevel() {
 }
 
 // [Id, currentLevel, MaxLevel]
-let HolyLight = 		['1', '0', '5'];	HolyLight[1] = urlParams.get('HolyLight'); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
-let DemonBane = 		['2', '0', '10'];	DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
-let Heal = 			['3', '0', '10'];	Heal[1] = urlParams.get('Heal'); document.getElementById(Heal[0]).innerHTML = Heal[1];
-let Teleport = 			['4', '0', '1'];	Teleport[1] = urlParams.get('Teleport'); document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+let HolyLight = 		['1', '0', '5'];	
+let DemonBane = 		['2', '0', '10'];	//DemonBane[1] = urlParams.get('DemonBane'); document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
+let Heal = 			['3', '0', '10'];	
+let Teleport = 			['4', '0', '1'];	
 let Blessing =  		['5', '0', '10'];	
 let SignumCrucis = 		['6', '0', '10'];	
 let Angelus = 			['7', '0', '10'];	
@@ -49,10 +49,12 @@ let LexAeterna = 		['31', '0', '5'];
 let Basilica = 			['32', '0', '5'];	
 let HolyWard =  		['33', '0', '10'];	
 
+/*
 console.log("-------");
-console.log(Heal[1]);
+console.log(DemonBane[1]);
 jobLevel();
 console.log(job1);
+*/
 
 function incNumber(skill) {
 	i = skill[1]		
