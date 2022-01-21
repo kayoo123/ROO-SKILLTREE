@@ -3,9 +3,12 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 
-console.log("-- test final --");
+console.log("-- test md5 1 --");
 
-// [Id, currentLevel, MaxLevel]
+
+/*
+ * [Id, currentLevel, maxLevel]
+ */
 let HolyLight = 		['1', '0', '5'];	
 let DemonBane = 		['2', '0', '10'];	
 let Heal = 			['3', '0', '10'];	
@@ -43,12 +46,18 @@ let Basilica = 			['32', '0', '5'];
 let HolyWard =  		['33', '0', '10'];	
 
 
+/*
+ * Function to refresh jobLevel
+ */
 function jobLevel() {
 	document.getElementById("job1").innerHTML = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
 	document.getElementById("job2").innerHTML = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
 	document.getElementById("job3").innerHTML = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 }
 
+/*
+ * Function to show skill with prerequis
+ */
 function showSkill() {
 	if (DemonBane[1] >= 5) { document.getElementById("SignumCrucis").setAttribute("style", "display:block"); }
 	if (Heal[1] >= 5) { document.getElementById("Angelus").setAttribute("style", "display:block"); }
@@ -64,6 +73,9 @@ function showSkill() {
 	if (KyrieEleison[1] >= 5) { document.getElementById("Basilica").setAttribute("style", "display:block"); }
 }
 
+/*
+ * Function to hide skill without prerequis
+ */
 function hideSkill() {
 	if (DemonBane[1] < 5) { SignumCrucis[1] = 0; document.getElementById(SignumCrucis[0]).innerHTML = 0; document.getElementById("SignumCrucis").setAttribute("style", "display:none"); }
 	if (Heal[1] < 5) { Angelus[1] = 0; document.getElementById(Angelus[0]).innerHTML = 0; document.getElementById("Angelus").setAttribute("style", "display:none"); }
@@ -79,6 +91,9 @@ function hideSkill() {
 	if (KyrieEleison[1] < 5) { Basilica[1] = 0; document.getElementById(Basilica[0]).innerHTML = 0; document.getElementById("Basilica").setAttribute("style", "display:none"); }
 }
 
+/*
+ * Function to increment skill level
+ */
 function incNumber(skill) {
 	i = skill[1]		
         if (skill[1] < skill[2]) {
@@ -92,6 +107,9 @@ function incNumber(skill) {
 	showSkill();
 }
 
+/*
+ * Function to decrease skill level
+ */
 function decNumber(skill) {
 	i = skill[1]
         if (skill[1] > 0) {
@@ -106,7 +124,9 @@ function decNumber(skill) {
 }
 
 
-// Get URI Params
+/*
+ * Get Parameters from URI
+ */
 const queryString = window.location.search;
 console.log(queryString);
 //decryptMD5
