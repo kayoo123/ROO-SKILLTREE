@@ -123,8 +123,8 @@ function decNumber(skill) {
 }
 
 function shareLink() {
-	
-	//console.log(urlShare);
+	q_path = "HolyLight=" + HolyLight[1] + "DemonBane=" + DemonBane[1] + "Heal=" + Heal[1]
+	console.log(q_path);
 }
 
 /*
