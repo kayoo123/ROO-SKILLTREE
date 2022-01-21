@@ -123,7 +123,7 @@ function decNumber(skill) {
 }
 
 function shareLink() {
-	q_path = "&HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + if "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1]
+	q_path = "&HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1]
 
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
