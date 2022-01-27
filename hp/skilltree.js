@@ -123,6 +123,7 @@ function calcSkill() {
 	if (Assumptio[1] < 5) { Suffragium[1] = 0; }
 	if (LexDivina[1] < 5) { LexAeterna[1] = 0; }
 	if (KyrieEleison[1] < 5) { Basilica[1] = 0; }
+	jobLevel();
 }
 
 
