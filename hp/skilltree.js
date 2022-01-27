@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 var total_job_all = 0;
-console.log("test-all-1")
+//console.log("test-all-1")
 /*
  * [Id, currentLevel, maxLevel]
  */
@@ -98,7 +98,7 @@ function hideSkill() {
  * Function to increment skill level
  */
 function incNumber(skill) {
-	if (total_job_all < 140) {
+	if (total_job_all < 120) {
 		i = skill[1]		
         if (skill[1] < skill[2]) {
         	i++;
@@ -110,7 +110,8 @@ function incNumber(skill) {
 		jobLevel();
 		showSkill();
 	} else {
-		console.log("END")
+		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
 	}
 }
 
