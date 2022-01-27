@@ -156,20 +156,15 @@ function incNumber(skill) {
 }
 function incNumberMax(skill) {
 	i = parseFloat(skill[2]) - parseFloat(skill[1]); 
-	console.log("-----")
-	console.log(i)
 	total_job_all_temp = total_job_all + i
-	console.log(total_job_all_temp)
 
 	if (total_job_all_temp <= 120) {
 		skill[1] = skill[2];
 		document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
 	} else {
-		j = total_job_all_temp - 120
-		console.log(j)
+		j = 120 - total_job_all;
 		skill[1] = parseFloat(skill[1]) + j
-		console.log("skill[1]: " + skill[1])
 		document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
