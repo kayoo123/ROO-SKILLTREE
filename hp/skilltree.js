@@ -105,7 +105,7 @@ function incNumber(skill) {
         }
 		document.getElementById(skill[0]).innerHTML = i;
 		jobLevel();
-		showSkill();
+		//showSkill();
 	} else {
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
 		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
@@ -115,7 +115,7 @@ function incNumberMax(skill) {
 	skill[1] = skill[2];
 	document.getElementById(skill[0]).innerHTML = skill[1];
 	jobLevel();
-	showSkill();
+	//showSkill();
 }
 
 
@@ -131,13 +131,13 @@ function decNumber(skill) {
         	skill[1] = skill[2];
     }
     document.getElementById(skill[0]).innerHTML = i;
-	hideSkill();
+	//hideSkill();
 	jobLevel();
 }
 function decNumberMax(skill) {
 	skill[1] = 0;
 	document.getElementById(skill[0]).innerHTML = skill[1];
-	hideSkill();
+	//hideSkill();
 	jobLevel();
 }
 
