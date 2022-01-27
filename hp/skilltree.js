@@ -147,7 +147,6 @@ function incNumber(skill) {
         } else if (skill[1] = skill[2]) {
         	skill[1] = skill[2];
         }
-		//document.getElementById(skill[0]).innerHTML = i;
 		incCalcSkill();
 	} else {
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
@@ -160,12 +159,10 @@ function incNumberMax(skill) {
 
 	if (total_job_all_temp <= 120) {
 		skill[1] = skill[2];
-		//document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
 	} else {
 		j = 120 - total_job_all;
 		skill[1] = parseFloat(skill[1]) + j
-		//document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
 		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
@@ -184,12 +181,10 @@ function decNumber(skill) {
     } else if (skill[1] = 0) {
         	skill[1] = skill[2];
     }
-    //document.getElementById(skill[0]).innerHTML = i;
 	decCalcSkill();
 }
 function decNumberMax(skill) {
 	skill[1] = 0;
-	//document.getElementById(skill[0]).innerHTML = skill[1];
 	decCalcSkill();
 }
 
