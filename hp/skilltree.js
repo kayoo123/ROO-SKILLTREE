@@ -124,11 +124,38 @@ function shareLink() {
 	var q_param = "?";
 	if(HolyLight[1] != 0) { q_param += "&HolyLight=" + HolyLight[1] };
 	if(DemonBane[1] != 0) { q_param += "&DemonBane=" + DemonBane[1] };
+	if(Heal[1] != 0) { q_param += "&Heal=" + Heal[1] };
+	if(Teleport[1] != 0) { q_param += "&Teleport=" + Teleport[1] };
+	if(Blessing[1] != 0) { q_param += "&Blessing=" + Blessing[1] };
+	if(SignumCrucis[1] != 0) { q_param += "&SignumCrucis=" + SignumCrucis[1] };
+	if(Angelus[1] != 0) { q_param += "&Angelus=" + Angelus[1] };
+	if(IncreaseAgility[1] != 0) { q_param += "&IncreaseAgility=" + IncreaseAgility[1] };
+	if(KyrieEleison[1] != 0) { q_param += "&KyrieEleison=" + KyrieEleison[1] };
+	if(Magnificat[1] != 0) { q_param += "&Magnificat=" + Magnificat[1] };
+	if(Resurection[1] != 0) { q_param += "&Resurection=" + Resurection[1] };
+	if(Sanctuary[1] != 0) { q_param += "&Sanctuary=" + Sanctuary[1] };
+	if(MaceMastery[1] != 0) { q_param += "&MaceMastery=" + MaceMastery[1] };
+	if(Recovery[1] != 0) { q_param += "&Recovery=" + Recovery[1] };
+	if(ImpositioManus[1] != 0) { q_param += "&ImpositioManus=" + ImpositioManus[1] };
+	if(TurnUndead[1] != 0) { q_param += "&TurnUndead=" + TurnUndead[1] };
+	if(Pneuma[1] != 0) { q_param += "&Pneuma=" + Pneuma[1] };
+	if(HolyJudgment[1] != 0) { q_param += "&HolyJudgment=" + HolyJudgment[1] };
+	if(Aspersio[1] != 0) { q_param += "&Aspersio=" + Aspersio[1] };
+	if(ZenHeart[1] != 0) { q_param += "&ZenHeart=" + ZenHeart[1] };
+	if(MagnusExorcismus[1] != 0) { q_param += "&MagnusExorcismus=" + MagnusExorcismus[1] };
+	if(SafetyWall[1] != 0) { q_param += "&SafetyWall=" + SafetyWall[1] };
+	if(Gloria[1] != 0) { q_param += "&Gloria=" + Gloria[1] };
+	if(Meditatio[1] != 0) { q_param += "&Meditatio=" + Meditatio[1] };
+	if(Assumptio[1] != 0) { q_param += "&Assumptio=" + Assumptio[1] };
+	if(LexDivina[1] != 0) { q_param += "&LexDivina=" + LexDivina[1] };
+	if(Judex[1] != 0) { q_param += "&Judex=" + Judex[1] };
+	if(AdvancedMaceMastery[1] != 0) { q_param += "&AdvancedMaceMastery=" + AdvancedMaceMastery[1] };
+	if(ManaRecharge[1] != 0) { q_param += "&ManaRecharge=" + ManaRecharge[1] };
+	if(Suffragium[1] != 0) { q_param += "&Suffragium=" + Suffragium[1] };
+	if(LexAeterna[1] != 0) { q_param += "&LexAeterna=" + LexAeterna[1] };
+	if(Basilica[1] != 0) { q_param += "&Basilica=" + Basilica[1] };
+	if(HolyWard[1] != 0) { q_param += "&HolyWard=" + HolyWard[1] };
 
-	//q_param += ( HolyLight[1] === 0 ) ? "":"\"&HolyLight=\" + HolyLight[1]";
-	//q_param += ( DemonBane[1] === 0 ) ? "":"\"&DemonBane=\" + DemonBane[1]";
-	//q_path = location.protocol + '//' + location.host + location.pathname + "?" + "&HolyLight=" + HolyLight[1] + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1] + "&Magnificat=" + Magnificat[1] + "&Resurection=" + Resurection[1] + "&Sanctuary=" + Sanctuary[1] + "&MaceMastery=" + MaceMastery[1] + "&Recovery=" + Recovery[1] + "&ImpositioManus=" + ImpositioManus[1] + "&TurnUndead=" + TurnUndead[1] + "&Pneuma=" + Pneuma[1] + "&HolyJudgment=" + HolyJudgment[1] + "&Aspersio=" + Aspersio[1] + "&ZenHeart=" + ZenHeart[1] + "&MagnusExorcismus=" + MagnusExorcismus[1] + "&SafetyWall=" + SafetyWall[1] + "&Gloria=" + Gloria[1] + "&Meditatio=" + Meditatio[1] + "&Assumptio=" + Assumptio[1] + "&LexDivina=" + LexDivina[1] + "&Judex=" + Judex[1] + "&AdvancedMaceMastery=" + AdvancedMaceMastery[1] + "&ManaRecharge=" + ManaRecharge[1] + "&Suffragium=" + Suffragium[1] + "&LexAeterna=" + LexAeterna[1] + "&Basilica=" + Basilica[1] + "&HolyWard=" + HolyWard[1]
-	//q_path = location.protocol + '//' + location.host + location.pathname + "?" + ( HolyLight[1] === 0 ) ? "":"\"&HolyLight=\" + HolyLight[1]" + "&DemonBane=" + DemonBane[1] + "&Heal=" + Heal[1] + "&Teleport=" + Teleport[1] + "&Blessing=" + Blessing[1] + "&SignumCrucis=" + SignumCrucis[1] + "&Angelus=" + Angelus[1] + "&IncreaseAgility=" + IncreaseAgility[1] + "&KyrieEleison=" + KyrieEleison[1] + "&Magnificat=" + Magnificat[1] + "&Resurection=" + Resurection[1] + "&Sanctuary=" + Sanctuary[1] + "&MaceMastery=" + MaceMastery[1] + "&Recovery=" + Recovery[1] + "&ImpositioManus=" + ImpositioManus[1] + "&TurnUndead=" + TurnUndead[1] + "&Pneuma=" + Pneuma[1] + "&HolyJudgment=" + HolyJudgment[1] + "&Aspersio=" + Aspersio[1] + "&ZenHeart=" + ZenHeart[1] + "&MagnusExorcismus=" + MagnusExorcismus[1] + "&SafetyWall=" + SafetyWall[1] + "&Gloria=" + Gloria[1] + "&Meditatio=" + Meditatio[1] + "&Assumptio=" + Assumptio[1] + "&LexDivina=" + LexDivina[1] + "&Judex=" + Judex[1] + "&AdvancedMaceMastery=" + AdvancedMaceMastery[1] + "&ManaRecharge=" + ManaRecharge[1] + "&Suffragium=" + Suffragium[1] + "&LexAeterna=" + LexAeterna[1] + "&Basilica=" + Basilica[1] + "&HolyWard=" + HolyWard[1]
 	q_path = location.protocol + '//' + location.host + location.pathname + q_param;
 	console.log(q_path);
 	navigator.clipboard.writeText(q_path);
