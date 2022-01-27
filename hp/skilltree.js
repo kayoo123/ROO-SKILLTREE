@@ -95,7 +95,7 @@ function hideSkill() {
  * Function to calc skill with prerequis
  */
 function calcSkill() {
-	/++
+	//++
 	if (SignumCrucis[1] > 0 && DemonBane[1] < 5) { DemonBane[1] = 5 };
 	if (Angelus[1] > 0 && Heal[1] < 5) { Heal[1] = 5 };
 	if (KyrieEleison[1] > 0 && Angelus[1] < 5) { Angelus[1] = 5 };
@@ -110,7 +110,19 @@ function calcSkill() {
 	if (Suffragium[1] > 0 && Assumptio[1] < 5) { Assumptio[1] = 5 };
 	if (LexAeterna[1] > 0 && LexDivina[1] < 5) { LexDivina[1] = 5 };
 	if (Basilica[1] > 0 && KyrieEleison[1] < 5) { KyrieEleison[1] = 5 };
-	/--
+	//--
+	if (DemonBane[1] >= 5) { SignumCrucis[1] = 0; }
+	if (Heal[1] >= 5) { Angelus[1] = 0; }
+	if (Angelus[1] >= 5) { KyrieEleison[1] = 0; }
+	if (Blessing[1] >= 5) { IncreaseAgility[1] = 0; }
+	if (Resurection[1] >= 1) { TurnUndead[1] = 0; }
+	if (TurnUndead[1] >= 5) { MagnusExorcismus[1] = 0; }
+	if (MaceMastery[1] >= 5) { HolyJudgment[1] = 0; }
+	if (ZenHeart[1] >= 5) { Meditatio[1] = 0; }
+	if (Meditatio[1] >= 5) { ManaRecharge[1] = 0; }
+	if (Assumptio[1] >= 5) { Suffragium[1] = 0; }
+	if (LexDivina[1] >= 5) { LexAeterna[1] = 0; }
+	if (KyrieEleison[1] >= 5) { Basilica[1] = 0; }
 }
 
 
