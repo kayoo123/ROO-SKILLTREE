@@ -160,12 +160,13 @@ function incNumberMax(skill) {
 	total_job_all_temp = total_job_all + i
 	console.log(total_job_all_temp)
 
-	if (total_job_all_temp < 120) {
+	if (total_job_all_temp <= 120) {
 		skill[1] = skill[2];
 		document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
 	} else {
 		j = total_job_all_temp - 120
+		console.log(j)
 		skill[1] = parseFloat(skill[1]) + j
 		document.getElementById(skill[0]).innerHTML = skill[1];
 		incCalcSkill();
