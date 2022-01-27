@@ -3,7 +3,7 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 var total_job_all = 0;
-console.log("test-all")
+console.log("test-all-1")
 /*
  * [Id, currentLevel, maxLevel]
  */
@@ -52,6 +52,7 @@ function jobLevel() {
 	var total_job2 = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
 	var total_job3 = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 	total_job_all = total_job1 + total_job2 + total_job3 ;
+	console.log(total_job_all);
 	document.getElementById("job1").innerHTML = total_job1 ;
 	document.getElementById("job2").innerHTML = total_job2 ;
 	document.getElementById("job3").innerHTML = total_job3 ;
@@ -101,7 +102,7 @@ function incNumber(skill) {
 		i = skill[1]		
         if (skill[1] < skill[2]) {
         	i++;
-		skill[1] = i;
+			skill[1] = i;
         } else if (skill[1] = skill[2]) {
         	skill[1] = skill[2];
         }
@@ -118,13 +119,13 @@ function incNumber(skill) {
  */
 function decNumber(skill) {
 	i = skill[1]
-        if (skill[1] > 0) {
-        	--i;
+    if (skill[1] > 0) {
+       	--i;
 		skill[1] = i;
-        } else if (skill[1] = 0) {
+    } else if (skill[1] = 0) {
         	skill[1] = skill[2];
-        }
-        document.getElementById(skill[0]).innerHTML = i;
+    }
+    document.getElementById(skill[0]).innerHTML = i;
 	hideSkill();
 	jobLevel();
 }
