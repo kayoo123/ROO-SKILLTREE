@@ -3,35 +3,33 @@ var job1 = 0;
 var job2 = 0;
 var job3 = 0;
 var total_job_all = 0;
-//console.log("test-all-1")
+
 /*
  * [Id, currentLevel, maxLevel]
  */
 let HolyLight = 		['1', '0', '5'];	
 let DemonBane = 		['2', '0', '10'];	
-let Heal = 			['3', '0', '10'];	
+let Heal = 				['3', '0', '10'];	
 let Teleport = 			['4', '0', '1'];	
 let Blessing =  		['5', '0', '10'];	
 let SignumCrucis = 		['6', '0', '10'];	
 let Angelus = 			['7', '0', '10'];	
-let IncreaseAgility = 		['8', '0', '5'];	
+let IncreaseAgility = 	['8', '0', '5'];	
 let KyrieEleison = 		['9', '0', '10'];	
-
 let Magnificat = 		['10', '0', '5'];	
 let Resurection = 		['11', '0', '4'];	
 let Sanctuary = 		['12', '0', '10'];	
 let MaceMastery = 		['13', '0', '10'];	
 let Recovery =  		['14', '0', '3'];	
-let ImpositioManus =		['15', '0', '10'];	
+let ImpositioManus =	['15', '0', '10'];	
 let TurnUndead = 		['16', '0', '10'];	
 let Pneuma = 			['17', '0', '10'];	
 let HolyJudgment = 		['18', '0', '10'];	
 let Aspersio =  		['19', '0', '2'];	
 let ZenHeart = 			['20', '0', '10'];	
-let MagnusExorcismus = 		['21', '0', '10'];	
+let MagnusExorcismus = 	['21', '0', '10'];	
 let SafetyWall = 		['22', '0', '10'];	
 let Gloria = 			['23', '0', '5'];	
-
 let Meditatio = 		['24', '0', '10'];	
 let Assumptio = 		['25', '0', '10'];	
 let LexDivina = 		['26', '0', '5'];	
@@ -113,6 +111,13 @@ function incNumber(skill) {
 		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
 	}
 }
+function incNumberMax(skill) {
+	skill[1] = skill[2];
+	document.getElementById(skill[0]).innerHTML = i;
+	jobLevel();
+	showSkill();
+}
+
 
 /*
  * Function to decrease skill level
@@ -126,6 +131,12 @@ function decNumber(skill) {
         	skill[1] = skill[2];
     }
     document.getElementById(skill[0]).innerHTML = i;
+	hideSkill();
+	jobLevel();
+}
+function decNumberMax(skill) {
+	skill[1] = 0;
+	document.getElementById(skill[0]).innerHTML = i;
 	hideSkill();
 	jobLevel();
 }
@@ -167,7 +178,6 @@ function shareLink() {
 	if(HolyWard[1] != 0) { q_param += "&HolyWard=" + HolyWard[1] };
 
 	q_path = location.protocol + '//' + location.host + location.pathname + q_param;
-	//console.log(q_path);
 	navigator.clipboard.writeText(q_path);
 	
 	document.getElementById("alarmmsg").innerHTML = "<...Link added into clipboard...>";
@@ -182,7 +192,6 @@ function reset() {
  * Get Parameters from URI
  */
 const queryString = window.location.search;
-//console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 
 if(urlParams.get('HolyLight')) { HolyLight[1] = parseFloat(urlParams.get('HolyLight')); document.getElementById(HolyLight[0]).innerHTML = HolyLight[1]; }
