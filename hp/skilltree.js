@@ -2,7 +2,8 @@ var i = 0;
 var job1 = 0;
 var job2 = 0;
 var job3 = 0;
-console.log("test")
+var total_job_all = 0;
+console.log("test-all")
 /*
  * [Id, currentLevel, maxLevel]
  */
@@ -47,12 +48,10 @@ let HolyWard =  		['33', '0', '10'];
  * Function to refresh jobLevel
  */
 function jobLevel() {
-
-	total_job1 = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
-	total_job2 = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
-	total_job3 = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
+	var total_job1 = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
+	var total_job2 = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
+	var total_job3 = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 	total_job_all = total_job1 + total_job2 + total_job3 ;
-	console.log(total_job_all)
 	document.getElementById("job1").innerHTML = total_job1 ;
 	document.getElementById("job2").innerHTML = total_job2 ;
 	document.getElementById("job3").innerHTML = total_job3 ;
@@ -98,16 +97,20 @@ function hideSkill() {
  * Function to increment skill level
  */
 function incNumber(skill) {
-	i = skill[1]		
+	if (total_job_all < 140) {
+		i = skill[1]		
         if (skill[1] < skill[2]) {
         	i++;
 		skill[1] = i;
         } else if (skill[1] = skill[2]) {
         	skill[1] = skill[2];
         }
-	document.getElementById(skill[0]).innerHTML = i;
-	jobLevel();
-	showSkill();
+		document.getElementById(skill[0]).innerHTML = i;
+		jobLevel();
+		showSkill();
+	} else {
+		console.log("END")
+	}
 }
 
 /*
@@ -122,8 +125,8 @@ function decNumber(skill) {
         	skill[1] = skill[2];
         }
         document.getElementById(skill[0]).innerHTML = i;
-	jobLevel();
 	hideSkill();
+	jobLevel();
 }
 
 function shareLink() {
@@ -163,7 +166,7 @@ function shareLink() {
 	if(HolyWard[1] != 0) { q_param += "&HolyWard=" + HolyWard[1] };
 
 	q_path = location.protocol + '//' + location.host + location.pathname + q_param;
-	console.log(q_path);
+	//console.log(q_path);
 	navigator.clipboard.writeText(q_path);
 	
 	document.getElementById("alarmmsg").innerHTML = "<...Link added into clipboard...>";
@@ -190,7 +193,6 @@ if(urlParams.get('SignumCrucis')) { SignumCrucis[1] = parseFloat(urlParams.get('
 if(urlParams.get('Angelus')) { Angelus[1] = parseFloat(urlParams.get('Angelus')); document.getElementById(Angelus[0]).innerHTML = Angelus[1]; }
 if(urlParams.get('IncreaseAgility')) { IncreaseAgility[1] = parseFloat(urlParams.get('IncreaseAgility')); document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1]; }
 if(urlParams.get('KyrieEleison')) { KyrieEleison[1] = parseFloat(urlParams.get('KyrieEleison')); document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1]; }
-
 if(urlParams.get('Magnificat')) { Magnificat[1] = parseFloat(urlParams.get('Magnificat')); document.getElementById(Magnificat[0]).innerHTML = Magnificat[1]; }
 if(urlParams.get('Resurection')) { Resurection[1] = parseFloat(urlParams.get('Resurection')); document.getElementById(Resurection[0]).innerHTML = Resurection[1]; }
 if(urlParams.get('Sanctuary')) { Sanctuary[1] = parseFloat(urlParams.get('Sanctuary')); document.getElementById(Sanctuary[0]).innerHTML = Sanctuary[1]; }
@@ -205,7 +207,6 @@ if(urlParams.get('ZenHeart')) { ZenHeart[1] = parseFloat(urlParams.get('ZenHeart
 if(urlParams.get('MagnusExorcismus')) { MagnusExorcismus[1] = parseFloat(urlParams.get('MagnusExorcismus')); document.getElementById(MagnusExorcismus[0]).innerHTML = MagnusExorcismus[1]; }
 if(urlParams.get('SafetyWall')) { SafetyWall[1] = parseFloat(urlParams.get('SafetyWall')); document.getElementById(SafetyWall[0]).innerHTML = SafetyWall[1]; }
 if(urlParams.get('Gloria')) { Gloria[1] = parseFloat(urlParams.get('Gloria')); document.getElementById(Gloria[0]).innerHTML = Gloria[1]; }
-
 if(urlParams.get('Meditatio')) { Meditatio[1] = parseFloat(urlParams.get('Meditatio')); document.getElementById(Meditatio[0]).innerHTML = Meditatio[1]; }
 if(urlParams.get('Assumptio')) { Assumptio[1] = parseFloat(urlParams.get('Assumptio')); document.getElementById(Assumptio[0]).innerHTML = Assumptio[1]; }
 if(urlParams.get('LexDivina')) { LexDivina[1] = parseFloat(urlParams.get('LexDivina')); document.getElementById(LexDivina[0]).innerHTML = LexDivina[1]; }
