@@ -280,7 +280,8 @@ jobLevel();
  * Get Modal
  */
 function showModal(modalId) {
-	var modal = document.getElementById("modalId"); 
+	i = modalId
+	var modal = document.getElementById(i); 
 	var span = document.getElementsByClassName("close")[0];
 	modal.style.display = "block"; // Show modal
 	span.onclick = function() { modal.style.display = "none"; } // When the user clicks on <span> (x), close the modal
