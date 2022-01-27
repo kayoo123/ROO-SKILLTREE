@@ -279,13 +279,10 @@ jobLevel();
 /*
  * Get Modal
  */
-function showModal(test) {
-
-	var modal = document.getElementById("m1"); // Get the modal
-	//var btn = document.getElementById("myBtn"); // Get the button that opens the modal
-	var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
-	//btn.onclick = function() { modal.style.display = "block"; } // When the user clicks the button, open the modal 
-	modal.style.display = "block";
+function showModal(modalId) {
+	var modal = document.getElementById("modalId"); 
+	var span = document.getElementsByClassName("close")[0];
+	modal.style.display = "block"; // Show modal
 	span.onclick = function() { modal.style.display = "none"; } // When the user clicks on <span> (x), close the modal
 	window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } } // When the user clicks anywhere outside of the modal, close it	
 }
