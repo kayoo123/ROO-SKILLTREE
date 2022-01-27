@@ -92,6 +92,47 @@ function hideSkill() {
 }
 
 /*
+ * Function to refreshSkill
+ */
+function refreshSkill() {
+	document.getElementById(HolyLight[0]).innerHTML = HolyLight[1];
+	document.getElementById(DemonBane[0]).innerHTML = DemonBane[1];
+	document.getElementById(Heal[0]).innerHTML = Heal[1];
+	document.getElementById(Teleport[0]).innerHTML = Teleport[1];
+	document.getElementById(Blessing[0]).innerHTML = Blessing[1];
+	document.getElementById(SignumCrucis[0]).innerHTML = SignumCrucis[1];
+	document.getElementById(Angelus[0]).innerHTML = Angelus[1];
+	document.getElementById(IncreaseAgility[0]).innerHTML = IncreaseAgility[1];
+	document.getElementById(KyrieEleison[0]).innerHTML = KyrieEleison[1];
+	document.getElementById(Magnificat[0]).innerHTML = Magnificat[1];
+  	document.getElementById(Resurection[0]).innerHTML = Resurection[1];
+	document.getElementById(Sanctuary[0]).innerHTML = Sanctuary[1];
+	document.getElementById(MaceMastery[0]).innerHTML = MaceMastery[1];
+	document.getElementById(Recovery[0]).innerHTML = Recovery[1];
+	document.getElementById(ImpositioManus[0]).innerHTML = ImpositioManus[1];
+	document.getElementById(TurnUndead[0]).innerHTML = TurnUndead[1];
+	document.getElementById(Pneuma[0]).innerHTML = Pneuma[1];
+	document.getElementById(HolyJudgment[0]).innerHTML = HolyJudgment[1];
+	document.getElementById(Aspersio[0]).innerHTML = Aspersio[1];
+	document.getElementById(ZenHeart[0]).innerHTML = ZenHeart[1];
+	document.getElementById(MagnusExorcismus[0]).innerHTML = MagnusExorcismus[1];
+	document.getElementById(SafetyWall[0]).innerHTML = SafetyWall[1];
+	document.getElementById(Gloria[0]).innerHTML = Gloria[1];
+	document.getElementById(Meditatio[0]).innerHTML = Meditatio[1];
+	document.getElementById(Assumptio[0]).innerHTML = Assumptio[1];
+	document.getElementById(LexDivina[0]).innerHTML = LexDivina[1];
+	document.getElementById(Judex[0]).innerHTML = Judex[1];
+	document.getElementById(AdvancedMaceMastery[0]).innerHTML = AdvancedMaceMastery[1];
+	document.getElementById(ManaRecharge[0]).innerHTML = ManaRecharge[1];
+	document.getElementById(Suffragium[0]).innerHTML = Suffragium[1];
+	document.getElementById(LexAeterna[0]).innerHTML = LexAeterna[1];
+	document.getElementById(Basilica[0]).innerHTML = Basilica[1];
+	document.getElementById(HolyWard[0]).innerHTML = HolyWard[1];	
+	jobLevel();
+}
+
+
+/*
  * Function to calc skill with prerequis
  */
 function calcSkill() {
@@ -123,7 +164,7 @@ function calcSkill() {
 	if (Assumptio[1] < 5) { Suffragium[1] = 0; }
 	if (LexDivina[1] < 5) { LexAeterna[1] = 0; }
 	if (KyrieEleison[1] < 5) { Basilica[1] = 0; }
-	jobLevel();
+	refreshSkill();
 }
 
 
@@ -140,8 +181,6 @@ function incNumber(skill) {
         	skill[1] = skill[2];
         }
 		document.getElementById(skill[0]).innerHTML = i;
-		jobLevel();
-		//showSkill();
 		calcSkill();
 	} else {
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
@@ -151,8 +190,6 @@ function incNumber(skill) {
 function incNumberMax(skill) {
 	skill[1] = skill[2];
 	document.getElementById(skill[0]).innerHTML = skill[1];
-	jobLevel();
-	//showSkill();
 	calcSkill();
 }
 
@@ -169,16 +206,12 @@ function decNumber(skill) {
         	skill[1] = skill[2];
     }
     document.getElementById(skill[0]).innerHTML = i;
-	//hideSkill();
 	calcSkill();
-	jobLevel();
 }
 function decNumberMax(skill) {
 	skill[1] = 0;
 	document.getElementById(skill[0]).innerHTML = skill[1];
-	//hideSkill();
 	calcSkill();
-	jobLevel();
 }
 
 function shareLink() {
@@ -269,7 +302,7 @@ if(urlParams.get('Basilica')) { Basilica[1] = parseFloat(urlParams.get('Basilica
 if(urlParams.get('HolyWard')) { HolyWard[1] = parseFloat(urlParams.get('HolyWard')); document.getElementById(HolyWard[0]).innerHTML = HolyWard[1]; }
 
 jobLevel();
-showSkill();
+//showSkill();
 
 
 /*
