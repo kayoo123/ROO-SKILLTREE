@@ -280,7 +280,7 @@ jobLevel();
  * Get Modal
  */
 function showModal(modalId) {
-	console.log(modalId)
+	console.log("modalId")
 	var i = 'm1';
 	console.log(i)
 	var i = m1;
