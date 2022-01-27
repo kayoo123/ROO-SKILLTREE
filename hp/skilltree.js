@@ -155,9 +155,20 @@ function incNumber(skill) {
 	}
 }
 function incNumberMax(skill) {
-	skill[1] = skill[2];
-	document.getElementById(skill[0]).innerHTML = skill[1];
-	incCalcSkill();
+	i = parseFloat(skill[2]) - parseFloat(skill[1]); 
+	total_job_all_temp = total_job_all + i
+
+	if (total_job_all_temp < 120) {
+		skill[1] = skill[2];
+		document.getElementById(skill[0]).innerHTML = skill[1];
+		incCalcSkill();
+	} else {
+		skill[1] = parseFloat(skill[1]) + i
+		document.getElementById(skill[0]).innerHTML = skill[1];
+		incCalcSkill();
+		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
+	}
 }
 
 
