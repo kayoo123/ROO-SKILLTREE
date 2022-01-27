@@ -280,7 +280,7 @@ jobLevel();
  * Get Modal
  */
 function showModal(modalId) {
-	var i = 'modalId';
+	var i = 'm1';
 	var modal = document.getElementById(i); 
 	var span = document.getElementsByClassName("close")[0];
 	modal.style.display = "block"; // Show modal
