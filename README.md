@@ -18,11 +18,15 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 
 - [x] use skilltree template
 - [x] show skill with prerequis
-- [x] hide skill wihtout prerequis 
+- [x] hide skill without prerequis 
+- [x] Show job level
 - [x] Use share ability
+- [x] Hide param with 0 level in qstring
 - [ ] Compress qstring when share
+- [x] block when reach max level
 - [x] reset button
-- [ ] add infobull
+- [ ] skill description in modal
+- [ ] Change view to have all skill showed ?
 - [ ] welcome page
 - [ ] footer
 - [ ] create lord knight Skilltree
