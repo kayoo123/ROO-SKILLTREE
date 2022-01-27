@@ -283,6 +283,8 @@ function showModal(modalId) {
 	console.log("modalId")
 	console.log('modalId')
 	console.log(modalId)
+	var str = modalId.toString();
+	console.log(str)
 
 	var modal = document.getElementById(i); 
 	var span = document.getElementsByClassName("close")[0];
