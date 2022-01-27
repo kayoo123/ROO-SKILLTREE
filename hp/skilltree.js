@@ -113,7 +113,7 @@ function incNumber(skill) {
 }
 function incNumberMax(skill) {
 	skill[1] = skill[2];
-	document.getElementById(skill[0]).innerHTML = i;
+	document.getElementById(skill[0]).innerHTML = skill[1];
 	jobLevel();
 	showSkill();
 }
@@ -136,7 +136,7 @@ function decNumber(skill) {
 }
 function decNumberMax(skill) {
 	skill[1] = 0;
-	document.getElementById(skill[0]).innerHTML = i;
+	document.getElementById(skill[0]).innerHTML = skill[1];
 	hideSkill();
 	jobLevel();
 }
