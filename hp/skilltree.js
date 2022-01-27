@@ -2,7 +2,7 @@ var i = 0;
 var job1 = 0;
 var job2 = 0;
 var job3 = 0;
-console.log("test2")
+console.log("test3")
 /*
  * [Id, currentLevel, maxLevel]
  */
@@ -122,8 +122,8 @@ function decNumber(skill) {
 
 function shareLink() {
 	var q_param = "?";
-	if(HolyLight[1] !== 0) { q_param += "&HolyLight=" + HolyLight[1] };
-	if(DemonBane[1] !== 0) { q_param += "&DemonBane=" + DemonBane[1] };
+	if(HolyLight[1] != 0) { q_param += "&HolyLight=" + HolyLight[1] };
+	if(DemonBane[1] != 0) { q_param += "&DemonBane=" + DemonBane[1] };
 
 	//q_param += ( HolyLight[1] === 0 ) ? "":"\"&HolyLight=\" + HolyLight[1]";
 	//q_param += ( DemonBane[1] === 0 ) ? "":"\"&DemonBane=\" + DemonBane[1]";
