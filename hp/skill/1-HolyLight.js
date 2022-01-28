@@ -1,6 +1,7 @@
+import { HolyLight } from '../skilltree-test.js'
 
 console.log("---")
-console.log(total_job_all)
+console.log(HolyLight[1])
 
 
 if(HolyLight[1] == 1) {

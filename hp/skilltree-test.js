@@ -4,7 +4,7 @@ var total_job_all = 0;
 /*
  * [Id, currentLevel, maxLevel]
  */
-let HolyLight = 		['1', '0', '5'];	
+export let HolyLight = 		['1', '0', '5'];	
 let DemonBane = 		['2', '0', '10'];	
 let Heal = 				['3', '0', '10'];	
 let Teleport = 			['4', '0', '1'];	
