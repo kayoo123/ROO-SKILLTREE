@@ -1,5 +1,5 @@
 var i = 0;
-export var total_job_all = 0;
+var total_job_all = 0;
 
 /*
  * [Id, currentLevel, maxLevel]
