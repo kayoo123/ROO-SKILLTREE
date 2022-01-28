@@ -1,6 +1,8 @@
 
 console.log("---")
-console.log(HolyLight[1])
+console.log(total_job_all)
+
+
 if(HolyLight[1] == 1) {
     document.write(`
     <p>lvl1</p>
