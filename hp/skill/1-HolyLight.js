@@ -1,3 +1,6 @@
+
+console.log("---")
+console.log(HolyLight[1])
 if(HolyLight[1] == 1) {
     document.write(`
     <p>lvl1</p>
@@ -22,4 +25,4 @@ if(HolyLight[1] == 5) {
     document.write(`
     <p>lvl5</p>
     `);
-}
+} 
