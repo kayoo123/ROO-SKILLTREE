@@ -1,4 +1,4 @@
-import { HolyLight } from '../skilltree-test.js'
+//import { HolyLight } from '../skilltree-test.js'
 
 console.log("--2-")
 console.log(HolyLight[1])
