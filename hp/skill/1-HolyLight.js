@@ -1,6 +1,6 @@
 import { HolyLight } from '../skilltree-test.js'
 
-console.log("---")
+console.log("--2-")
 console.log(HolyLight[1])
 
 
