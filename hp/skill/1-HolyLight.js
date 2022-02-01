@@ -1,7 +1,9 @@
 //import { HolyLight } from '../skilltree-test.js'
 
-console.log("--2-")
-console.log(HolyLight[1])
+console.log("--1--")
+
+var lvl = location.search.substring(1);
+console.log(lvl)
 
 
 if(HolyLight[1] == 1) {
