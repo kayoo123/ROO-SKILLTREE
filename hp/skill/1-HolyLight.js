@@ -1,35 +1,22 @@
+//console.log("--1--")
 //import { HolyLight } from '../skilltree-test.js'
-
-console.log("--1--")
 //var level = document.currentScript.getAttribute('lvl'); 
+//var lvl = localStorage.getItem('HolyLight');
+//console.log(lvl)
 
-//location.reload();
-var lvl = localStorage.getItem('HolyLight');
-console.log(lvl)
+document.write(`
 
-
-if(lvl == 1) {
-    document.write(`
-    <p>lvl1</p>
-    `);
-}
-if(lvl == 2) {
-    document.write(`
-    <p>lvl2</p>
-    `);
-}
-if(lvl == 3) {
-    document.write(`
-    <p>lvl3</p>
-    `);
-}
-if(lvl == 4) {
-    document.write(`
-    <p>lvl4</p>
-    `);
-}
-if(lvl == 5) {
-    document.write(`
-    <p>lvl5</p>
-    `);
-} 
+<img src="img/1.gif" alt="HolyLight" style="width:50px;height:50px;display:inline;"><h1>HolyLight</h1>
+    <fieldset><legend>[Magic Spell][Holy]</legend>
+        <p> Prays to the Holy Light, attacking an enemy <br />
+            target and dealing <b>190/200/300%</br> + <b>60/70/80/90</b> Holy Magic <br />
+            damage to them.
+        </p>	
+        <hr>
+        <p> - Cast Time: (0,20s + XXs)
+            - Cooldown: Neutral
+            - SP Cost: 11
+            - Global Recovery: 0.5s
+        </p>
+    </fieldset>
+`);
