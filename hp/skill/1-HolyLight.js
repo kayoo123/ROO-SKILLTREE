@@ -1,9 +1,10 @@
 //import { HolyLight } from '../skilltree-test.js'
 
-console.log("--2--")
+console.log("--1--")
 //var level = document.currentScript.getAttribute('lvl'); 
 
-var lvl = $localStorage.$HolyLight;
+$localStorage.$sync()
+var lvl = $localStorage.getItem('HolyLight');
 console.log(lvl)
 
 
