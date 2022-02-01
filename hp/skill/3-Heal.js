@@ -1,9 +1,15 @@
 document.write(`
-
-    <h1>Add your HTML code here</h1>
-
-     <p>Notice, you do not have to escape LF's with a '\',
-        like demonstrated in the above code listing.
-    </p>
-
+    <h1><img src="img/1.gif" alt="HolyLight" style="width:50px;height:50px;display:inline;">&nbsp; HolyLight</h1>
+    <fieldset><legend>[Magic Spell][Holy]</legend>
+        <p> Prays to the Holy Light, attacking an enemy <br />
+            target and dealing <b>190/200/300%</b> + <b>60/70/80/90</b> Holy Magic <br />
+            damage to them.
+        </p>	
+        <hr>
+        <p> - Cast Time: (0,20s + XXs)<br />
+            - Cooldown: Neutral<br />
+            - SP Cost: 11<br />
+            - Global Recovery: 0.5s<br />
+        </p>
+    </fieldset>
 `);
