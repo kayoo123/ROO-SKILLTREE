@@ -90,7 +90,7 @@ function refreshSkill() {
 	document.getElementById(Basilica[0]).innerHTML = Basilica[1];
 	document.getElementById(HolyWard[0]).innerHTML = HolyWard[1];	
 
-	localStorage.setItem("HolyLight", HolyLight[1]);
+	//localStorage.setItem("HolyLight", HolyLight[1]);
 	jobLevel();
 }
 
@@ -231,7 +231,7 @@ function shareLink() {
 }
 
 function reset() {
-	localStorage.clear();
+	//localStorage.clear();
 	window.location.href = location.protocol + '//' + location.host + location.pathname
 }
 
