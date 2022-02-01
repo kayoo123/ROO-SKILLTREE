@@ -1,32 +1,32 @@
 //import { HolyLight } from '../skilltree-test.js'
 
-console.log("--6--")
+console.log("--1--")
+var lvl = localStorage.getItem("HolyLight-lvl");
+//var level = document.currentScript.getAttribute('lvl'); 
+console.log(lvl)
 
-var level = document.currentScript.getAttribute('lvl'); 
-console.log(level)
 
-
-if(level == 1) {
+if(lvl == 1) {
     document.write(`
     <p>lvl1</p>
     `);
 }
-if(level == 2) {
+if(lvl == 2) {
     document.write(`
     <p>lvl2</p>
     `);
 }
-if(level == 3) {
+if(lvl == 3) {
     document.write(`
     <p>lvl3</p>
     `);
 }
-if(level == 4) {
+if(lvl == 4) {
     document.write(`
     <p>lvl4</p>
     `);
 }
-if(level == 5) {
+if(lvl == 5) {
     document.write(`
     <p>lvl5</p>
     `);
