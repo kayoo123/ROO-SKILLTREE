@@ -3,8 +3,10 @@ document.write(`
     <fieldset><legend>[Support] [Neutral]</legend>
         <p> Taps the power of magic, drawing a cross rune and reducing the Physical Defense of a certain type of monsters within range by <b>14/28/33</b>%. <br />
             This effect lasts 15 seconds.
-            <small>Applies to Undead and Demon monsters</small>
         </p>	
+        <small>
+            Applies to Undead and Demon monsters
+        </small>
         <hr>
         <p> 
             - Cast Time: (0.30s + XXs) <br />
