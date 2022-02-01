@@ -2,8 +2,8 @@
 
 console.log("--1--")
 
-var lvl = location.search.substring(1);
-console.log(lvl)
+var level = sessionStorage.getItem('lvl');
+console.log(level)
 
 
 if(HolyLight[1] == 1) {
