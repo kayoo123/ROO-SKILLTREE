@@ -231,7 +231,7 @@ function shareLink() {
 }
 
 function reset() {
-	localStorage.removeItem('HolyLight');
+	localStorage.clear();
 	window.location.href = location.protocol + '//' + location.host + location.pathname
 }
 
