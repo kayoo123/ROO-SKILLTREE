@@ -26,9 +26,12 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [x] block when reach max level
 - [x] reset button
 - [ ] skill description in modal
-- [ ] Change view to have all skill showed ?
-- [ ] welcome page
-- [ ] footer
+- [x] close modal when click outside windows
+- [x] change background color when open modal
+- [ ] select level description ?
+- [x] Change view to have all skill showed
+- [x] welcome page
+- [x] footer
 - [ ] create lord knight Skilltree
 - [ ] create high wizzard Skilltree
 - [ ] create Master Smith Skilltree 
@@ -36,3 +39,9 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [ ] create Champion Skilltree
 - [ ] create Assassin Cross Skilltree
 - [ ] create Sniper Skilltree
+
+## FixMe
+
+- [x] closing modal with icon
+- [ ] center modal on small screen
+- [ ] bug using the ALLMX function with a prerequisite when you are close to the max level.
