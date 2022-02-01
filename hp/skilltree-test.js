@@ -89,6 +89,8 @@ function refreshSkill() {
 	document.getElementById(LexAeterna[0]).innerHTML = LexAeterna[1];
 	document.getElementById(Basilica[0]).innerHTML = Basilica[1];
 	document.getElementById(HolyWard[0]).innerHTML = HolyWard[1];	
+
+	document.getElementById(s1).innerHTML = HolyLight[1];
 	jobLevel();
 }
 
