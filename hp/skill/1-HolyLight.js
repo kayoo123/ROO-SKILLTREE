@@ -3,7 +3,7 @@
 console.log("--1--")
 //var level = document.currentScript.getAttribute('lvl'); 
 
-var lvl = localStorage.getItem('HolyLight');
+var lvl = $localStorage.$HolyLight;
 console.log(lvl)
 
 
