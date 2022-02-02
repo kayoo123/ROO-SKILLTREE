@@ -12,10 +12,24 @@ document.write(`
         </p>	
         <hr>
         <p> 
-            - Cast Time: (0.20s + XXs)<br />
-            - Cooldown: Neutral<br />
-            - SP Cost: 11<br />
-            - Global Recovery: 0.5s
+            <table>
+                <tr>
+                    <td>Cast Time:</td>
+                    <td>(0,20s + XXs)</td>
+                </tr>
+                <tr>
+                    <td>Cooldown:</td>
+                    <td>Neutral</td>
+                </tr>
+                <tr>
+                    <td>SP Cost:</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Global Recovery:</td>
+                    <td>0.5s</td>
+                </tr>
+            </table>
         </p>
     </fieldset>
 `);
