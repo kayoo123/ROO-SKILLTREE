@@ -30,6 +30,7 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [x] close modal when click outside windows
 - [x] change background color when open modal
 - [ ] select level description (not sure to want it)
+- [ ] change color to match game palet
 - [x] Change view to have all skill showed
 - [x] welcome page
 - [x] footer
