@@ -9,4 +9,7 @@ document.write(`
             The active duration of Increase Agility and Blessing is the same.
         </small>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Acolyte Blessing Lv.5
+    </p>
 `);

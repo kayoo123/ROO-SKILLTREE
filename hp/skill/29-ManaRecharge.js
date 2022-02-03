@@ -5,4 +5,7 @@ document.write(`
             Permanently decreases skill SP cost by <b>4/8/12/16/20</b> % .
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: High Priest Meditatio Lv.5
+    </p>
 `);

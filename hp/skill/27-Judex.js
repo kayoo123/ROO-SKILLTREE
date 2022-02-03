@@ -26,4 +26,7 @@ document.write(`
             </table>
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Acolyte Holy Light Lv.5
+    </p>
 `);

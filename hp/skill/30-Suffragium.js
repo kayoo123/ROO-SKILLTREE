@@ -28,4 +28,7 @@ document.write(`
             </table>
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: High Priest Assumptio Lv.5
+    </p>
 `);

@@ -8,4 +8,7 @@ document.write(`
             Mace-type weapon is required.
         </small>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Priest Mace Mastery Lv.5
+    </p>
 `);

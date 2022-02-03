@@ -31,4 +31,7 @@ document.write(`
             </table>
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Acolyte Angelus Lv.5
+    </p>
 `);

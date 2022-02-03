@@ -31,4 +31,7 @@ document.write(`
             </table>
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Priest Turn Undead Lv.5
+    </p>
 `);

@@ -33,4 +33,7 @@ document.write(`
             </table>
         </p>
     </fieldset>
+    <p style="color:#FF0000";>
+        Prerequisite skill: Priest Resurrection Lv.1
+    </p>
 `);
