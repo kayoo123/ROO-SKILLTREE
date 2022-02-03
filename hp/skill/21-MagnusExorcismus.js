@@ -5,9 +5,6 @@ document.write(`
             Summon a Cross Magic Circle at the target are, dealing <b>67/167/200/311/444/450/583/733/750/867</b> % Holy Magic Damage to all monsters. <br />
             The magic circle lasts <b>5/6/7/8/9/10/11/12/13/14</b> seconds.
         </p>
-        <small>
-            Holy Attributes deal more damage to Undead and Shadow monsters.
-        </small>
         <hr>
         <p> 
             <table>
