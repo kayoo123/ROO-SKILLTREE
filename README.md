@@ -25,7 +25,7 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [ ] Compress qstring when share
 - [x] block when reach max level
 - [x] reset button
-- [ ] skill description in modal
+- [x] skill description in modal
 - [ ] add job level with titre (ex. Acolyte job lvl.17)
 - [x] close modal when click outside windows
 - [x] change background color when open modal
