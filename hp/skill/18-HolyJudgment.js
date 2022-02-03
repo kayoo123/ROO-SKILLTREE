@@ -4,9 +4,11 @@ document.write(`
         <p> 
             Active Effect: <br />
             Attacks a single target, and there's a <br />
-		        - 75% chance to deal <b>210/220/230/240/250/260/270/280/290/300</b> % neutral physical damage, <br />
-                - 15% chance to deal <b>110/120/130/140/150/160/170/180/190/200</b> % neutral physical damage, and <br />
-                - 10% chance to deal <b>320/340/360/380/400/420/440/460/480/500</b> % neutral physical damage to them  <br />       
+            <ul>
+		        <li>75% chance to deal <b>210/220/230/240/250/260/270/280/290/300</b> % neutral physical damage,</li>
+                <li>15% chance to deal <b>110/120/130/140/150/160/170/180/190/200</b> % neutral physical damage, and</li>
+                <li>10% chance to deal <b>320/340/360/380/400/420/440/460/480/500</b> % neutral physical damage to them</li>            
+            </ul>
             Passive Effect: <br />
             There's a <b>5/7/9/11/13/15/17/19/20</b> % chance to deal <b>110/120/130/140/150/160/170/180/190/200</b> % neutral physical damage with Basic Attacks.
         </p>
