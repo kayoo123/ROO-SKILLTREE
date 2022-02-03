@@ -53,7 +53,7 @@ function jobLevel() {
 
 	var jobName = "Acolyte"
 	if (total_job1 >= 40) { jobName = "Priest" };
-	if (total_job2 >= 40) { jobName = "High Priest" };
+	if (total_job1 >= 40 && total_job2 >= 40) { jobName = "High Priest" };
 	document.getElementById("jobName").innerHTML = jobName;
 
 //	if (total_job1 < 40) { jobLevel = total_job1 };
