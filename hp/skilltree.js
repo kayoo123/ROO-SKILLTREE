@@ -50,6 +50,11 @@ function jobLevel() {
 	document.getElementById("job1").innerHTML = total_job1 ;
 	document.getElementById("job2").innerHTML = total_job2 ;
 	document.getElementById("job3").innerHTML = total_job3 ;
+
+	jobName = "Acolyte"
+	if (total_job1 > 39) { jobName = "Priest" };
+	if (total_job2 > 39) { jobName = "High Priest" };
+	document.getElementById("jobName").innerHTML = jobName;
 }
 
 /*
