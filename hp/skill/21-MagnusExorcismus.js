@@ -1,6 +1,6 @@
 document.write(`
-    <h1><img src="img/19.gif" alt="Aspersio" style="width:40px;height:40px;display:inline;">&nbsp; Aspersio</h1>
-    <fieldset><legend>[Support] [Neutral]</legend>
+    <h1><img src="img/21.gif" alt="MagnusExorcismus" style="width:40px;height:40px;display:inline;">&nbsp; Magnus Exorcismus</h1>
+    <fieldset><legend>[Magic Spell] [Holy]</legend>
         <p> 
             Grants Holy attribute to a team member's weapon for <b>60/300</b> seconds
         </p>
