@@ -104,11 +104,15 @@ function incCalcSkill() {
 	if (KyrieEleison[1] > 0 && Angelus[1] < 5) { Angelus[1] = 5 };
 	if (KyrieEleison[1] > 0 && Heal[1] < 5) { Heal[1] = 5 };
 	if (IncreaseAgility[1] > 0 && Blessing[1] < 5) { Blessing[1] = 5 };
+	if (Sanctuary[1] > 0 && Heal[1] < 5) { Heal[1] = 5 };
 	if (TurnUndead[1] > 0 && Resurection[1] < 1) { Resurection[1] = 1 };
 	if (MagnusExorcismus[1] > 0 && TurnUndead[1] < 5) { TurnUndead[1] = 5 };
 	if (MagnusExorcismus[1] > 0 && Resurection[1] < 1) { Resurection[1] = 1 };
 	if (HolyJudgment[1] > 0 && MaceMastery[1] < 5) { MaceMastery[1] = 5 };
 	if (Meditatio[1] > 0 && ZenHeart[1] < 5) { ZenHeart[1] = 5 };
+	if (Assumptio[1] > 0 && Angelus[1] < 5) { Angelus[1] = 5 };
+	if (Judex[1] > 0 && HolyLight[1] < 5) { HolyLight[1] = 5 };
+	if (AdvancedMaceMastery[1] > 0 && MaceMastery[1] < 5) { MaceMastery[1] = 5 };
 	if (ManaRecharge[1] > 0 && Meditatio[1] < 5) { Meditatio[1] = 5 };
 	if (Suffragium[1] > 0 && Assumptio[1] < 5) { Assumptio[1] = 5 };
 	if (LexAeterna[1] > 0 && LexDivina[1] < 5) { LexDivina[1] = 5 };
@@ -119,12 +123,13 @@ function incCalcSkill() {
 }
 function decCalcSkill() {
 	if (DemonBane[1] < 5) { SignumCrucis[1] = 0; }
-	if (Heal[1] < 5) { Angelus[1] = 0; }
-	if (Angelus[1] < 5) { KyrieEleison[1] = 0; }
+	if (Heal[1] < 5) { Angelus[1] = 0; Sanctuary[1] = 0; }
+	if (Angelus[1] < 5) { KyrieEleison[1] = 0; Assumptio[1] = 0; }
 	if (Blessing[1] < 5) { IncreaseAgility[1] = 0; }
+	if (HolyLight[1] < 5) { Judex[1] = 0; }
 	if (Resurection[1] < 1) { TurnUndead[1] = 0; }
 	if (TurnUndead[1] < 5) { MagnusExorcismus[1] = 0; }
-	if (MaceMastery[1] < 5) { HolyJudgment[1] = 0; }
+	if (MaceMastery[1] < 5) { HolyJudgment[1] = 0; AdvancedMaceMastery[1] = 0; }
 	if (ZenHeart[1] < 5) { Meditatio[1] = 0; }
 	if (Meditatio[1] < 5) { ManaRecharge[1] = 0; }
 	if (Assumptio[1] < 5) { Suffragium[1] = 0; }
