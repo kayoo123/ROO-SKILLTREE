@@ -26,9 +26,10 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [x] block when reach max level
 - [x] reset button
 - [ ] skill description in modal
+- [ ] add job level with titre (ex. Acolyte job lvl.17)
 - [x] close modal when click outside windows
 - [x] change background color when open modal
-- [ ] select level description ?
+- [ ] select level description (not sure to want it)
 - [x] Change view to have all skill showed
 - [x] welcome page
 - [x] footer

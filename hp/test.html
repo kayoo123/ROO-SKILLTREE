@@ -7,10 +7,10 @@
 <main>
 <body>
 	<h1 id=a>High Priest</h1>
-	<ul class="list-unstyled">
+	<ul>
 		<li><a href="/ROO-SKILLTREE/hp/?&Heal=10&Blessing=10&Angelus=5&IncreaseAgility=5&KyrieEleison=5&Resurection=4&Sanctuary=10&Recovery=3&Aspersio=2&ZenHeart=5&SafetyWall=10&Gloria=1&Meditatio=10&Assumptio=10&ManaRecharge=5&Suffragium=3&Basilica=1">Full Support</a> <small>[21 pt left]</small></li>
-		<li>Magnus Exorcismus: </li>
-		<li>Battle Priest: </li>
+		<li><a href="#">Magnus Exorcismus</a> <small>[xx pt left]</small></li>
+		<li><a href="#">Battle Priest</a> <small>[xx pt left]</small></li>
 	</ul>  
 	<fieldset><legend> 1st job: [<label id="job1">0</label>/40]</legend>	
 		<div id="HolyLight">
@@ -79,7 +79,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(Angelus)"/>
 		>> <img src="img/7.gif" alt="Angelus" style="width:20px;height:20px;display:inline;">
 		<span title="">Angelus</span> [<label id="7">0</label>/10]
-		<br />
+		<div id="m7" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m7')">&times;</span>
+			  <script src="skill/7-Angelus.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="KyrieEleison">
 		<input type="button" value="--" id="decM" onclick="decNumberMax(KyrieEleison)"/>
@@ -88,7 +94,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(KyrieEleison)"/>
 		>>>> <img src="img/9.gif" alt="KyrieEleison" style="width:20px;height:20px;display:inline;">
 		<span title="">KyrieEleison</span> [<label id="9">0</label>/10]
-		<br />
+		<div id="m9" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m9')">&times;</span>
+			  <script src="skill/9-KyrieEleison.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Teleport">
 		<input type="button" value="--" id="decM" onclick="decNumberMax(Teleport)"/>
@@ -97,7 +109,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(Teleport)"/>
 		<img src="img/4.gif" alt="Teleport" style="width:20px;height:20px;display:inline;">
 		<span title="">Teleport</span> [<label id="4">0</label>/1]
-		<br />
+		<div id="m4" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m4')">&times;</span>
+			  <script src="skill/4-Teleport.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Blessing">
 		<input type="button" value="--" id="decM" onclick="decNumberMax(Blessing)"/>
@@ -106,7 +124,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(Blessing)"/>
 		<img src="img/5.gif" alt="Blessing" style="width:20px;height:20px;display:inline;">
 		<span title="">Blessing</span> [<label id="5">0</label>/10]
-		<br />
+		<div id="m5" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m5')">&times;</span>
+			  <script src="skill/5-Blessing.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="IncreaseAgility">
 		<input type="button" value="--" id="decM" onclick="decNumberMax(IncreaseAgility)"/>
@@ -115,7 +139,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(IncreaseAgility)"/>
 		>> <img src="img/8.gif" alt="IncreaseAgility" style="width:20px;height:20px;display:inline;">
 		<span title="">IncreaseAgility</span> [<label id="8">0</label>/5]
-		<br />
+		<div id="m8" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m8')">&times;</span>
+			  <script src="skill/8-IncreaseAgility.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 
 	</fieldset>
@@ -129,7 +159,13 @@
 		<input type="button" value="++" id="decM" onclick="incNumberMax(Magnificat)"/>
 		<img src="img/10.gif" alt="Magnificat" style="width:20px;height:20px;display:inline;">
 		<span title="">Magnificat</span> [<label id="10">0</label>/5]
-		<br />
+		<div id="m10" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m10')">&times;</span>
+			  <script src="skill/10-Magnificat.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Resurection">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Resurection)"/>
@@ -138,7 +174,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Resurection)"/>
 		<img src="img/11.gif" alt="Resurection" style="width:20px;height:20px;display:inline;">
 		<span title="">Resurection</span> [<label id="11">0</label>/4]
-		<br />
+		<div id="m11" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m11')">&times;</span>
+			  <script src="skill/11-Resurection.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="TurnUndead">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(TurnUndead)"/>
@@ -147,7 +189,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(TurnUndead)"/>
 		>> <img src="img/16.gif" alt="TurnUndead" style="width:20px;height:20px;display:inline;">
 		<span title="">TurnUndead</span> [<label id="16">0</label>/10]
-		<br />
+		<div id="m16" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m16')">&times;</span>
+			  <script src="skill/16-TurnUndead.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="MagnusExorcismus">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(MagnusExorcismus)"/>
@@ -156,7 +204,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(MagnusExorcismus)"/>
 		>>>> <img src="img/21.gif" alt="MagnusExorcismus" style="width:20px;height:20px;display:inline;">
 		<span title="">MagnusExorcismus</span> [<label id="21">0</label>/10]
-		<br />
+		<div id="m21" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m21')">&times;</span>
+			  <script src="skill/3-MagnusExorcismus.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Sanctuary">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Sanctuary)"/>
@@ -165,7 +219,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Sanctuary)"/>
 		<img src="img/12.gif" alt="Sanctuary" style="width:20px;height:20px;display:inline;">
 		<span title="">Sanctuary</span> [<label id="12">0</label>/10]
-		<br />
+		<div id="m12" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m12')">&times;</span>
+			  <script src="skill/3-Sanctuary.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="MaceMastery">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(MaceMastery)"/>
@@ -174,7 +234,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(MaceMastery)"/>
 		<img src="img/13.gif" alt="MaceMastery" style="width:20px;height:20px;display:inline;">
 		<span title="">MaceMastery</span> [<label id="13">0</label>/10]
-		<br />
+		<div id="m13" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m13')">&times;</span>
+			  <script src="skill/13-MaceMastery.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="HolyJudgment">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(HolyJudgment)"/>
@@ -183,7 +249,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(HolyJudgment)"/>
 		>> <img src="img/18.gif" alt="HolyJudgment" style="width:20px;height:20px;display:inline;">
 		<span title="">HolyJudgment</span> [<label id="18">0</label>/10]
-		<br />
+		<div id="m18" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m18')">&times;</span>
+			  <script src="skill/18-HolyJudgment.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Recovery">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Recovery)"/>
@@ -192,7 +264,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Recovery)"/>
 		<img src="img/14.gif" alt="Recovery" style="width:20px;height:20px;display:inline;">
 		<span title="">Recovery</span> [<label id="14">0</label>/3]
-		<br />
+		<div id="m14" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m14')">&times;</span>
+			  <script src="skill/14-Recovery.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="ImpositioManus">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(ImpositioManus)"/>
@@ -201,7 +279,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(ImpositioManus)"/>
 		<img src="img/15.gif" alt="ImpositioManus" style="width:20px;height:20px;display:inline;">
 		<span title="">ImpositioManus</span> [<label id="15">0</label>/10]
-		<br />
+		<div id="m15" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m15')">&times;</span>
+			  <script src="skill/15-ImpositioManus.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Pneuma">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Pneuma)"/>
@@ -210,7 +294,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Pneuma)"/>
 		<img src="img/17.gif" alt="Pneuma" style="width:20px;height:20px;display:inline;">
 		<span title="">Pneuma</span> [<label id="17">0</label>/10]
-		<br />
+		<div id="m17" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m17')">&times;</span>
+			  <script src="skill/17-Pneuma.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Aspersio">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Aspersio)"/>
@@ -219,7 +309,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Aspersio)"/>
 		<img src="img/19.gif" alt="Aspersio" style="width:20px;height:20px;display:inline;">
 		<span title="">Aspersio</span> [<label id="19">0</label>/2]
-		<br />
+		<div id="m19" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m19')">&times;</span>
+			  <script src="skill/19-Aspersio.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="ZenHeart">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(ZenHeart)"/>
@@ -228,7 +324,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(ZenHeart)"/>
 		<img src="img/20.gif" alt="ZenHeart" style="width:20px;height:20px;display:inline;">
 		<span title="">ZenHeart</span> [<label id="20">0</label>/10]
-		<br />
+		<div id="m20" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m20')">&times;</span>
+			  <script src="skill/20-ZenHeart.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="SafetyWall">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(SafetyWall)"/>
@@ -237,7 +339,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(SafetyWall)"/>
 		<img src="img/22.gif" alt="SafetyWall" style="width:20px;height:20px;display:inline;">
 		<span title="">SafetyWall</span> [<label id="22">0</label>/10]
-		<br />
+		<div id="m22" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m22')">&times;</span>
+			  <script src="skill/22-SafetyWall.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Gloria">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Gloria)"/>
@@ -246,7 +354,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Gloria)"/>
 		<img src="img/23.gif" alt="Gloria" style="width:20px;height:20px;display:inline;">
 		<span title="">Gloria</span> [<label id="23">0</label>/5]
-		<br />
+		<div id="m23" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m23')">&times;</span>
+			  <script src="skill/23-Gloria.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 
 	</fieldset>
@@ -260,7 +374,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Meditatio)"/>
 		** <img src="img/24.gif" alt="Meditatio" style="width:20px;height:20px;display:inline;">
 		<span title="">Meditatio</span> [<label id="24">0</label>/10]
-		<br />
+		<div id="m24" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m24')">&times;</span>
+			  <script src="skill/24-Meditatio.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="ManaRecharge">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(ManaRecharge)"/>
@@ -269,7 +389,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(ManaRecharge)"/>
 		>>>> <img src="img/29.gif" alt="ManaRecharge" style="width:20px;height:20px;display:inline;">
 		<span title="">ManaRecharge</span> [<label id="29">0</label>/5]
-		<br />
+		<div id="m29" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m29')">&times;</span>
+			  <script src="skill/29-ManaRecharge.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Assumptio">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Assumptio)"/>
@@ -278,7 +404,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Assumptio)"/>
 		<img src="img/25.gif" alt="Assumptio" style="width:20px;height:20px;display:inline;">
 		<span title="">Assumptio</span> [<label id="25">0</label>/10]
-		<br />
+		<div id="m25" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m25')">&times;</span>
+			  <script src="skill/25-Assumptio.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Suffragium">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Suffragium)"/>
@@ -287,7 +419,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Suffragium)"/>
 		>> <img src="img/30.gif" alt="Suffragium" style="width:20px;height:20px;display:inline;">
 		<span title="">Suffragium</span> [<label id="30">0</label>/3]
-		<br />
+		<div id="m30" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m30')">&times;</span>
+			  <script src="skill/30-Suffragium.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="LexDivina">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(LexDivina)"/>
@@ -296,7 +434,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(LexDivina)"/>
 		<img src="img/26.gif" alt="LexDivina" style="width:20px;height:20px;display:inline;">
 		<span title="">LexDivina</span> [<label id="26">0</label>/5]
-		<br />
+		<div id="m26" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m26')">&times;</span>
+			  <script src="skill/26-LexDivina.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="LexAeterna">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(LexAeterna)"/>
@@ -305,7 +449,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(LexAeterna)"/>
 		>> <img src="img/31.gif" alt="LexAeterna" style="width:20px;height:20px;display:inline;">
 		<span title="">LexAeterna</span> [<label id="31">0</label>/5]
-		<br />
+		<div id="m31" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m31')">&times;</span>
+			  <script src="skill/31-LexAeterna.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Judex">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Judex)"/>
@@ -314,7 +464,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Judex)"/>
 		<img src="img/27.gif" alt="Judex" style="width:20px;height:20px;display:inline;">
 		<span title="">Judex</span> [<label id="27">0</label>/10]
-		<br />
+		<div id="m27" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m27')">&times;</span>
+			  <script src="skill/27-Judex.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="AdvancedMaceMastery">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(AdvancedMaceMastery)"/>
@@ -323,7 +479,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(AdvancedMaceMastery)"/>
 		<img src="img/28.gif" alt="AdvancedMaceMastery" style="width:20px;height:20px;display:inline;">
 		<span title="">AdvancedMaceMastery</span> [<label id="28">0</label>/10]
-		<br />
+		<div id="m28" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m28')">&times;</span>
+			  <script src="skill/28-AdvancedMaceMastery.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="Basilica">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(Basilica)"/>
@@ -332,7 +494,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Basilica)"/>
 		** <img src="img/32.gif" alt="Basilica" style="width:20px;height:20px;display:inline;">
 		<span title="">Basilica</span> [<label id="32">0</label>/5]
-		<br />
+		<div id="m32" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m32')">&times;</span>
+			  <script src="skill/32-Basilica.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 		<div id="HolyWard">
 			<input type="button" value="--" id="decM" onclick="decNumberMax(HolyWard)"/>
@@ -341,7 +509,13 @@
 			<input type="button" value="++" id="decM" onclick="incNumberMax(HolyWard)"/>
 		<img src="img/33.gif" alt="HolyWard" style="width:20px;height:20px;display:inline;">
 		<span title="">HolyWard</span> [<label id="33">0</label>/10]
-		<br />
+		<div id="m33" class="modal">
+			<div class="modal-content">
+			  <span class="close" onclick="hideModal('m33')">&times;</span>
+			  <script src="skill/33-HolyWard.js"></script>
+		   </div>
+	  	</div>
+	  	<br />
 		</div>
 
 	</fieldset>
