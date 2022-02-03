@@ -1,7 +1,7 @@
 document.write(`
     <h1><img src="img/6.gif" alt="SignumCrucis" style="width:50px;height:50px;display:inline;">&nbsp; Signum Crusis</h1>
     <fieldset><legend>[Support] [Neutral]</legend>
-        <p> Taps the power of magic, drawing a cross rune and reducing the Physical Defense of a certain type of monsters within range by <b>14/28/33</b>%. <br />
+        <p> Taps the power of magic, drawing a cross rune and reducing the Physical Defense of a certain type of monsters within range by <b>14/22/30/34/38/42/46/50</b>%. <br />
             This effect lasts 15 seconds.
         </p>	
         <small>
