@@ -51,10 +51,16 @@ function jobLevel() {
 	document.getElementById("job2").innerHTML = total_job2 ;
 	document.getElementById("job3").innerHTML = total_job3 ;
 
-	jobName = "Acolyte"
-	if (total_job1 > 39) { jobName = "Priest" };
-	if (total_job2 > 39) { jobName = "High Priest" };
+	var jobName = "Acolyte"
+	if (total_job1 >= 40) { jobName = "Priest" };
+	if (total_job2 >= 40) { jobName = "High Priest" };
 	document.getElementById("jobName").innerHTML = jobName;
+
+	if (total_job1 < 40) { jobLevel = total_job1 };
+	if (total_job1 >= 40 && total_job2 < 40) { jobLevel = total_job2 };
+	if (total_job2 >= 40 ) { jobLevel = total_job3 };
+	if (jobLevel > 40 ) { jobLevel = 40 };
+	document.getElementById("jobLevel").innerHTML = jobLevel;
 }
 
 /*
