@@ -5,7 +5,7 @@
 //console.log(lvl)
 
 document.write(`
-    <h1><img src="img/1.gif" alt="HolyLight" style="width:50px;height:50px;display:inline;">&nbsp; HolyLight</h1>
+    <h1><img src="img/1.gif" alt="HolyLight" style="width:40px;height:40px;display:inline;">&nbsp; HolyLight</h1>
     <fieldset><legend>[Magic Spell] [Holy]</legend>
         <p> 
             Prays to the Holy Light, attacking an enemy target and dealing <b>190/230/270/310/350 %</b> + <b>60/100/140/180/220</b> Holy Magic damage to them.

@@ -1,5 +1,5 @@
 document.write(`
-    <h1><img src="img/7.gif" alt="Angelus" style="width:50px;height:50px;display:inline;">&nbsp; Angelus</h1>
+    <h1><img src="img/7.gif" alt="Angelus" style="width:40px;height:40px;display:inline;">&nbsp; Angelus</h1>
     <fieldset><legend>[Support] [Neutral]</legend>
         <p> 
             Increases all your allies Base Physical Defenses by <b>50/55/60/65/70/75/80/85/90/95</b> % for <b>240/280/320/360/400/440/480/520/560/600</b> seconds.

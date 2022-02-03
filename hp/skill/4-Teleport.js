@@ -1,5 +1,5 @@
 document.write(`
-    <h1><img src="img/4.gif" alt="Teleport" style="width:50px;height:50px;display:inline;">&nbsp; Teleport</h1>
+    <h1><img src="img/4.gif" alt="Teleport" style="width:40px;height:40px;display:inline;">&nbsp; Teleport</h1>
     <fieldset><legend>[Support] [Neutral]</legend>
         <p> 
             Teleports to any location on the map. <br />

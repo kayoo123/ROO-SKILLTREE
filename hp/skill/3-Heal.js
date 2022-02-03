@@ -1,5 +1,5 @@
 document.write(`
-    <h1><img src="img/3.gif" alt="Heal" style="width:50px;height:50px;display:inline;">&nbsp; Heal</h1>
+    <h1><img src="img/3.gif" alt="Heal" style="width:40px;height:40px;display:inline;">&nbsp; Heal</h1>
     <fieldset><legend>[Support] [Holy]</legend>
         <p> 
             Restores HP equals <b>(base Level + INT) * 0.6  * Skill Level + (0.5 + Skill Level /20) * Magic ATK + 25/30/35/40/45/50/55/60/65/70</b> to friendly targets and yourself.

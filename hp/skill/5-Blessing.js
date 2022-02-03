@@ -1,5 +1,5 @@
 document.write(`
-    <h1><img src="img/5.gif" alt="Blessing" style="width:50px;height:50px;display:inline;">&nbsp; Blessing</h1>
+    <h1><img src="img/5.gif" alt="Blessing" style="width:40px;height:40px;display:inline;">&nbsp; Blessing</h1>
     <fieldset><legend>[Support] [Neutral]</legend>
         <p> 
             Increase certain attributes of your target and teammates, including :<br />

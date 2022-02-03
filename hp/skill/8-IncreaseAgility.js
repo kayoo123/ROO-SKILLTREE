@@ -1,5 +1,5 @@
 document.write(`
-    <h1><img src="img/2.gif" alt="DemonBane" style="width:40px;height:40px;display:inline;">&nbsp; Demon Bane</h1>
+    <h1><img src="img/8.gif" alt="IncreaseAgility" style="width:40px;height:40px;display:inline;">&nbsp; Increase Agility</h1>
     <fieldset><legend>[Passive]</legend>	
         <p> 
             Gains <b>2/4/6/8/10/12/14/16/18/20</b> Base Physical Attack and <b>2/4/6/8/10/12/14/16/18/20</b> Base Physical Defense. <br />
