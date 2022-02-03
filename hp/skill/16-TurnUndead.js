@@ -34,6 +34,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Priest Resurrection Lv.1
+       <small>Prerequisite skill: Priest Resurrection Lv.1</small>
     </p>
 `);

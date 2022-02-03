@@ -10,6 +10,6 @@ document.write(`
         </small>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Acolyte Blessing Lv.5
+        <small>Prerequisite skill: Acolyte Blessing Lv.5</small>
     </p>
 `);

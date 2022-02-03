@@ -6,6 +6,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: High Priest Meditatio Lv.5
+        <small>Prerequisite skill: High Priest Meditatio Lv.5</small>
     </p>
 `);

@@ -32,6 +32,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Acolyte Angelus Lv.5
+        <small>Prerequisite skill: Acolyte Angelus Lv.5</small>
     </p>
 `);

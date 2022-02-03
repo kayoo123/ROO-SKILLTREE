@@ -9,6 +9,6 @@ document.write(`
         </small>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Priest Mace Mastery Lv.5
+        <small>Prerequisite skill: Priest Mace Mastery Lv.5</small>
     </p>
 `);

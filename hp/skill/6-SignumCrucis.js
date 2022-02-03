@@ -30,6 +30,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Acolyte Demon Bane Lv.5
+        <small>Prerequisite skill: Acolyte Demon Bane Lv.5</small>
     </p>
 `);

@@ -34,6 +34,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Acolyte Kyrie Eleison Lv.5
+        <small>Prerequisite skill: Acolyte Kyrie Eleison Lv.5</small>
     </p>
 `);

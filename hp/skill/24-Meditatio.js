@@ -6,6 +6,6 @@ document.write(`
         </p>
     </fieldset>
     <p style="color:#FF0000";>
-        Prerequisite skill: Priest Zen Heart Lv.5
+        <small>Prerequisite skill: Priest Zen Heart Lv.5</small>
     </p>
 `);
