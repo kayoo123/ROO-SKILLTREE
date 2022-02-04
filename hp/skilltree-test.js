@@ -52,8 +52,23 @@ function jobLevel() {
 	document.getElementById("job3").innerHTML = total_job3 ;
 
 	var jobName = "Acolyte"
-	if (total_job1 >= 40) { jobName = "Priest"; document.getElementById("f2").style.display = "block"; };
-	if (total_job1 >= 40 && total_job2 >= 40) { jobName = "High Priest"; document.getElementById("f3").style.display = "block"; };
+	if (total_job1 < 40) { 
+		document.getElementById("imgJob1").style.display = "block"; 
+		document.getElementById("imgJob2").style.display = "none";
+		document.getElementById("imgJob3").style.display = "none";
+	}
+	if (total_job1 >= 40) { 
+		jobName = "Priest"; document.getElementById("f2").style.display = "block"; 
+		document.getElementById("imgJob1").style.display = "none"; 
+		document.getElementById("imgJob2").style.display = "block";
+		document.getElementById("imgJob3").style.display = "none";
+	};
+	if (total_job1 >= 40 && total_job2 >= 40) { 
+		jobName = "High Priest"; document.getElementById("f3").style.display = "block"; 
+		document.getElementById("imgJob1").style.display = "none"; 
+		document.getElementById("imgJob2").style.display = "none";
+		document.getElementById("imgJob3").style.display = "block";
+	};
 	document.getElementById("jobName").innerHTML = jobName;
 
 }
