@@ -304,3 +304,19 @@ function hideModal(modalId) {
 	var modal = document.getElementById(modalId); 
 	modal.style.display = "none"; // Hide modal
 }
+
+
+
+/*
+ * Show Job with btn
+ */
+function showJob() {
+	document.getElementById("btnHide").style.display = "block";
+	document.getElementById("f2").style.display = "block";
+	document.getElementById("f3").style.display = "block";
+}
+function hideJob() {
+	document.getElementById("btnShow").style.display = "block";
+	document.getElementById("f2").style.display = "none";
+	document.getElementById("f3").style.display = "none";
+}
