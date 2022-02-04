@@ -29,6 +29,9 @@ Please create a [new Issue](https://github.com/kayoo123/ROO-SKILLTREE/issues) if
 - [ ] add job level with titre (ex. Acolyte job lvl.17)
 - [x] close modal when click outside windows
 - [x] change background color when open modal
+- [x] hide new skill if not job 40
+- [x] Show/hide job skill button
+- [x] show in red when max skill
 - [ ] select level description (not sure to want it)
 - [ ] change color to match game palet
 - [x] Change view to have all skill showed
