@@ -165,7 +165,7 @@ function incNumber(skill) {
 		incCalcSkill();
 	} else {
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
-		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 2000);
 	}
 }
 function incNumberMax(skill) {
@@ -180,7 +180,7 @@ function incNumberMax(skill) {
 		skill[1] = parseFloat(skill[1]) + j
 		incCalcSkill();
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
-		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 2000);
 	}
 }
 
@@ -304,7 +304,6 @@ function hideModal(modalId) {
 	var modal = document.getElementById(modalId); 
 	modal.style.display = "none"; // Hide modal
 }
-
 
 
 /*
