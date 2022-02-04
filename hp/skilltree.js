@@ -52,8 +52,8 @@ function jobLevel() {
 	document.getElementById("job3").innerHTML = total_job3 ;
 
 	var jobName = "Acolyte"
-	if (total_job1 >= 40) { jobName = "Priest" };
-	if (total_job1 >= 40 && total_job2 >= 40) { jobName = "High Priest" };
+	if (total_job1 >= 40) { jobName = "Priest"; document.getElementById("f2").style.display = "block"; };
+	if (total_job1 >= 40 && total_job2 >= 40) { jobName = "High Priest"; document.getElementById("f3").style.display = "block"; };
 	document.getElementById("jobName").innerHTML = jobName;
 
 //	if (total_job1 < 40) { jobLevel = total_job1 };
@@ -165,7 +165,7 @@ function incNumber(skill) {
 		incCalcSkill();
 	} else {
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
-		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 2000);
 	}
 }
 function incNumberMax(skill) {
@@ -180,7 +180,7 @@ function incNumberMax(skill) {
 		skill[1] = parseFloat(skill[1]) + j
 		incCalcSkill();
 		document.getElementById("alarmmsg").innerHTML = "<...MAX LEVEL...>";
-		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 1000);
+		setTimeout(function(){ document.getElementById("alarmmsg").innerHTML = '';}, 2000);
 	}
 }
 
@@ -303,4 +303,21 @@ function showModal(modalId) {
 function hideModal(modalId) {
 	var modal = document.getElementById(modalId); 
 	modal.style.display = "none"; // Hide modal
+}
+
+
+/*
+ * Show Job with btn
+ */
+function showJob() {
+	document.getElementById("btnHide").style.display = "block";
+	document.getElementById("btnShow").style.display = "none";
+	document.getElementById("f2").style.display = "block";
+	document.getElementById("f3").style.display = "block";
+}
+function hideJob() {
+	document.getElementById("btnHide").style.display = "none";
+	document.getElementById("btnShow").style.display = "block";
+	document.getElementById("f2").style.display = "none";
+	document.getElementById("f3").style.display = "none";
 }
