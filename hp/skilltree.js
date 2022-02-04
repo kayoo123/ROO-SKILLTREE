@@ -55,12 +55,6 @@ function jobLevel() {
 	if (total_job1 >= 40) { jobName = "Priest"; document.getElementById("f2").style.display = "block"; };
 	if (total_job1 >= 40 && total_job2 >= 40) { jobName = "High Priest"; document.getElementById("f3").style.display = "block"; };
 	document.getElementById("jobName").innerHTML = jobName;
-
-//	if (total_job1 < 40) { jobLevel = total_job1 };
-//	if (total_job1 >= 40 && total_job2 < 40) { jobLevel = total_job2 };
-//	if (total_job2 >= 40 ) { jobLevel = total_job3 };
-//	if (jobLevel > 40 ) { jobLevel = 40 };
-//	document.getElementById("jobLevel").innerHTML = jobLevel;
 }
 
 /*
