@@ -47,9 +47,11 @@ function jobLevel() {
 	var total_job2 = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
 	var total_job3 = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 	total_job_all = total_job1 + total_job2 + total_job3 ;
+	ptLeft = 120 - total_job_all;
 	document.getElementById("job1").innerHTML = total_job1 ;
 	document.getElementById("job2").innerHTML = total_job2 ;
 	document.getElementById("job3").innerHTML = total_job3 ;
+	document.getElementById("ptLeft").innerHTML = ptLeft ;
 
 	if (total_job1 < 40) { 
 		document.getElementById("imgJob1").style.display = "block"; 
