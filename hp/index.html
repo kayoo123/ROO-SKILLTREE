@@ -6,13 +6,8 @@
 </nav>
 <main>
 <body>
-	<h1 id=a><label id="jobName">Acolyte</label></h1>
-	<ul>
-		<li><a href="/ROO-SKILLTREE/hp/?&Heal=10&Blessing=10&Angelus=5&IncreaseAgility=5&KyrieEleison=5&Resurection=4&Sanctuary=10&Recovery=3&Aspersio=2&ZenHeart=5&SafetyWall=10&Gloria=1&Meditatio=10&Assumptio=10&Suffragium=3&Basilica=1">Full Support</a> <small>[26 pt left]</small></li>
-		<li><a href="/ROO-SKILLTREE/hp/?&Heal=10&Blessing=10&Angelus=5&IncreaseAgility=5&KyrieEleison=5&Resurection=4&Recovery=3&TurnUndead=5&Aspersio=2&MagnusExorcismus=10&SafetyWall=10&Gloria=1&Assumptio=5&Suffragium=3&HolyWard=10">Magnus Exorcismus</a> <small>[32 pt left]</small></li>
-		<li><a href="/ROO-SKILLTREE/hp/?&DemonBane=10&Blessing=10&IncreaseAgility=5&MaceMastery=10&Recovery=3&ImpositioManus=10&HolyJudgment=10&Aspersio=2&SafetyWall=10&Gloria=5&AdvancedMaceMastery=10&HolyWard=10">Battle Priest</a> <small>[25 pt left]</small></li>
-	</ul>
-	<input id="btnShow" type="button" value = "Show" onclick="showJob()" style="float: right;"/><input id="btnHide"type="button" value = "Hide" onclick="hideJob()" style="float: right;" hidden/><br />
+	<h1 id=a><img src="job1.png" alt="1" id="imgJob1" /><img src="job2.png" alt="2" id="imgJob2" hidden /><img src="job3.png" alt="3" id="imgJob3" hidden /></h1>
+	<p>Remaining Job Skill: <b><label id="ptLeft"></label></b><input id="btnShow" type="button" value = "Show" onclick="showJob()" style="float: right;"/><input id="btnHide"type="button" value = "Hide" onclick="hideJob()" style="float: right;" hidden/></p>
 	<fieldset id="f1"><legend> 1st job: [<label id="job1">0</label>/40]</legend>	
 		<div id="HolyLight">
 		<input type="button" value="--" id="decM" onclick="decNumberMax(HolyLight)"/>
@@ -48,7 +43,7 @@
 		<input type="button" value="-" id="dec" onclick="decNumber(SignumCrucis)"/>
 		<input type="button" value="+" id="inc" onclick="incNumber(SignumCrucis)"/>
 		<input type="button" value="++" id="decM" onclick="incNumberMax(SignumCrucis)"/>
-		>> <img src="img/6.gif" alt="SignumCrucis" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/6.gif" alt="SignumCrucis" style="width:20px;height:20px;display:inline;">
         <span title=""><a href=# onclick="showModal('m6')">Signum Crucis</a></span> [<label id="6">0</label>/10]
 		<div id="m6" class="modal">
   			<div class="modal-content">
@@ -78,7 +73,7 @@
 		<input type="button" value="-" id="dec" onclick="decNumber(Angelus)"/>
 		<input type="button" value="+" id="inc" onclick="incNumber(Angelus)"/>
 		<input type="button" value="++" id="decM" onclick="incNumberMax(Angelus)"/>
-		>> <img src="img/7.gif" alt="Angelus" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/7.gif" alt="Angelus" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m7')">Angelus</a></span> [<label id="7">0</label>/10]
 		<div id="m7" class="modal">
 			<div class="modal-content">
@@ -93,7 +88,7 @@
 		<input type="button" value="-" id="dec" onclick="decNumber(KyrieEleison)"/>
 		<input type="button" value="+" id="inc" onclick="incNumber(KyrieEleison)"/>
 		<input type="button" value="++" id="decM" onclick="incNumberMax(KyrieEleison)"/>
-		>>>> <img src="img/9.gif" alt="KyrieEleison" style="width:20px;height:20px;display:inline;">
+		└───► <img src="img/9.gif" alt="KyrieEleison" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m9')">KyrieEleison</a></span> [<label id="9">0</label>/10]
 		<div id="m9" class="modal">
 			<div class="modal-content">
@@ -138,7 +133,7 @@
 		<input type="button" value="-" id="dec" onclick="decNumber(IncreaseAgility)"/>
 		<input type="button" value="+" id="inc" onclick="incNumber(IncreaseAgility)"/>
 		<input type="button" value="++" id="decM" onclick="incNumberMax(IncreaseAgility)"/>
-		>> <img src="img/8.gif" alt="IncreaseAgility" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/8.gif" alt="IncreaseAgility" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m8')">IncreaseAgility</a></span> [<label id="8">0</label>/5]
 		<div id="m8" class="modal">
 			<div class="modal-content">
@@ -188,7 +183,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(TurnUndead)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(TurnUndead)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(TurnUndead)"/>
-		>> <img src="img/16.gif" alt="TurnUndead" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/16.gif" alt="TurnUndead" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m16')">TurnUndead</a></span> [<label id="16">0</label>/10]
 		<div id="m16" class="modal">
 			<div class="modal-content">
@@ -203,7 +198,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(MagnusExorcismus)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(MagnusExorcismus)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(MagnusExorcismus)"/>
-		>>>> <img src="img/21.gif" alt="MagnusExorcismus" style="width:20px;height:20px;display:inline;">
+		└───► <img src="img/21.gif" alt="MagnusExorcismus" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m21')">MagnusExorcismus</a></span> [<label id="21">0</label>/10]
 		<div id="m21" class="modal">
 			<div class="modal-content">
@@ -218,7 +213,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Sanctuary)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Sanctuary)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Sanctuary)"/>
-		** <img src="img/12.gif" alt="Sanctuary" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/12.gif" alt="Sanctuary" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m12')">Sanctuary</a></span> [<label id="12">0</label>/10]
 		<div id="m12" class="modal">
 			<div class="modal-content">
@@ -248,7 +243,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(HolyJudgment)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(HolyJudgment)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(HolyJudgment)"/>
-		>> <img src="img/18.gif" alt="HolyJudgment" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/18.gif" alt="HolyJudgment" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m18')">HolyJudgment</a></span> [<label id="18">0</label>/10]
 		<div id="m18" class="modal">
 			<div class="modal-content">
@@ -373,7 +368,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Meditatio)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Meditatio)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Meditatio)"/>
-		** <img src="img/24.gif" alt="Meditatio" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/24.gif" alt="Meditatio" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m24')">Meditatio</a></span> [<label id="24">0</label>/10]
 		<div id="m24" class="modal">
 			<div class="modal-content">
@@ -388,7 +383,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(ManaRecharge)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(ManaRecharge)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(ManaRecharge)"/>
-		>>>> <img src="img/29.gif" alt="ManaRecharge" style="width:20px;height:20px;display:inline;">
+		└───► <img src="img/29.gif" alt="ManaRecharge" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m29')">ManaRecharge</a></span> [<label id="29">0</label>/5]
 		<div id="m29" class="modal">
 			<div class="modal-content">
@@ -403,7 +398,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Assumptio)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Assumptio)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Assumptio)"/>
-		** <img src="img/25.gif" alt="Assumptio" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/25.gif" alt="Assumptio" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m25')">Assumptio</a></span> [<label id="25">0</label>/10]
 		<div id="m25" class="modal">
 			<div class="modal-content">
@@ -418,7 +413,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Suffragium)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Suffragium)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Suffragium)"/>
-		>> <img src="img/30.gif" alt="Suffragium" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/30.gif" alt="Suffragium" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m30')">Suffragium</a></span> [<label id="30">0</label>/3]
 		<div id="m30" class="modal">
 			<div class="modal-content">
@@ -448,7 +443,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(LexAeterna)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(LexAeterna)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(LexAeterna)"/>
-		>> <img src="img/31.gif" alt="LexAeterna" style="width:20px;height:20px;display:inline;">
+		└─► <img src="img/31.gif" alt="LexAeterna" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m31')">LexAeterna</a></span> [<label id="31">0</label>/5]
 		<div id="m31" class="modal">
 			<div class="modal-content">
@@ -463,7 +458,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Judex)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Judex)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Judex)"/>
-		** <img src="img/27.gif" alt="Judex" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/27.gif" alt="Judex" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m27')">Judex</a></span> [<label id="27">0</label>/10]
 		<div id="m27" class="modal">
 			<div class="modal-content">
@@ -478,7 +473,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(AdvancedMaceMastery)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(AdvancedMaceMastery)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(AdvancedMaceMastery)"/>
-		** <img src="img/28.gif" alt="AdvancedMaceMastery" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/28.gif" alt="AdvancedMaceMastery" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m28')">AdvancedMaceMastery</a></span> [<label id="28">0</label>/10]
 		<div id="m28" class="modal">
 			<div class="modal-content">
@@ -493,7 +488,7 @@
 			<input type="button" value="-" id="dec" onclick="decNumber(Basilica)"/>
 			<input type="button" value="+" id="inc" onclick="incNumber(Basilica)"/>
 			<input type="button" value="++" id="decM" onclick="incNumberMax(Basilica)"/>
-		** <img src="img/32.gif" alt="Basilica" style="width:20px;height:20px;display:inline;">
+		──► <img src="img/32.gif" alt="Basilica" style="width:20px;height:20px;display:inline;">
 		<span title=""><a href=# onclick="showModal('m32')">Basilica</a></span> [<label id="32">0</label>/5]
 		<div id="m32" class="modal">
 			<div class="modal-content">
@@ -523,7 +518,16 @@
 
 	<input type="button" value = "Share" onclick="shareLink()" /><input type="button" value = "Reset" onclick="reset()" />
 	<p style="color:#FF0000";><label id="alarmmsg"></label></p>
+	<h3>Core build template:</h3>
+	<p>	
+	        <ul>
+		    <li><a href="/ROO-SKILLTREE/hp/?&Heal=10&Blessing=10&Angelus=5&IncreaseAgility=5&KyrieEleison=5&Resurection=4&Sanctuary=10&Recovery=3&Aspersio=2&ZenHeart=5&SafetyWall=10&Gloria=1&Meditatio=10&Assumptio=10&Suffragium=3&Basilica=1">Full Support</a> <small>[26*]</small></li>
+		    <li><a href="/ROO-SKILLTREE/hp/?&Heal=10&Blessing=10&Angelus=5&IncreaseAgility=5&KyrieEleison=5&Resurection=4&Recovery=3&TurnUndead=5&Aspersio=2&MagnusExorcismus=10&SafetyWall=10&Gloria=1&Assumptio=5&Suffragium=3&HolyWard=10">Magnus Exorcismus</a> <small>[32*]</small></li>
+		    <li><a href="/ROO-SKILLTREE/hp/?&DemonBane=10&Blessing=10&IncreaseAgility=5&MaceMastery=10&Recovery=3&ImpositioManus=10&HolyJudgment=10&Aspersio=2&SafetyWall=10&Gloria=5&AdvancedMaceMastery=10&HolyWard=10">Battle Priest</a> <small>[25*]</small></li>
+	        </ul>
+	</p>
 	<script src="skilltree.js"></script>
 </body>
 </main>
 <footer><div id=m><p>We would not exist if wasn't for the help of the community. Thank you to all involved in contributing to the database, and also to Gravity Co, for creating and publishing such wonderful game globally. </p><p>© Lilliz - Ghostring (NA)</p></div></footer>
+

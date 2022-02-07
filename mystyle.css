@@ -1,4 +1,5 @@
 body {
+  /* background-image: url('img/bg.jpg'); */
   display:flex;
   flex-direction:column;
   font:16px/1.6 sans-serif;
