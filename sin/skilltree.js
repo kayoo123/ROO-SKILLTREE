@@ -4,13 +4,14 @@ var total_job_all = 0;
 /*
  * [Id, currentLevel, maxLevel]
  */
-let HolyLight = 		['1', '0', '5'];	
-let DemonBane = 		['2', '0', '10'];	
-let Heal = 				['3', '0', '10'];	
-let Teleport = 			['4', '0', '1'];	
-let Blessing =  		['5', '0', '10'];	
-let SignumCrucis = 		['6', '0', '10'];	
-let Angelus = 			['7', '0', '10'];	
+let DoubleAttack = 		['1', '0', '10'];	
+let Evenom = 			['2', '0', '10'];	
+let ShieldDodge = 		['3', '0', '5'];	
+let TrickControl = 		['4', '0', '10'];	
+let IncreaseDodge = 	['5', '0', '10'];	
+let Hiding = 			['6', '0', '10'];	
+let BackSlide = 		['7', '0', '1'];	
+
 let IncreaseAgility = 	['8', '0', '5'];	
 let KyrieEleison = 		['9', '0', '10'];	
 let Magnificat = 		['10', '0', '5'];	
