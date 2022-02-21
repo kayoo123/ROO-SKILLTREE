@@ -44,7 +44,7 @@ let HolyWard =  		['33', '0', '10'];
  * Function to refresh jobLevel
  */
 function jobLevel() {
-	var total_job1 = parseFloat(HolyLight[1]) + parseFloat(DemonBane[1]) + parseFloat(Heal[1]) + parseFloat(Teleport[1]) + parseFloat(Blessing[1]) + parseFloat(SignumCrucis[1]) + parseFloat(Angelus[1]) + parseFloat(IncreaseAgility[1]) + parseFloat(KyrieEleison[1]) ;
+	var total_job1 = parseFloat(DoubleAttack[1]) + parseFloat(Evenom[1]) + parseFloat(ShieldDodge[1]) + parseFloat(TrickControl[1]) + parseFloat(IncreaseDodge[1]) + parseFloat(Hiding[1]) + parseFloat(BackSlide[1]) ;
 	var total_job2 = parseFloat(Magnificat[1]) + parseFloat(Resurection[1]) + parseFloat(Sanctuary[1]) + parseFloat(MaceMastery[1]) + parseFloat(Recovery[1]) + parseFloat(ImpositioManus[1]) + parseFloat(TurnUndead[1]) + parseFloat(Pneuma[1]) + parseFloat(HolyJudgment[1]) + parseFloat(Aspersio[1]) + parseFloat(ZenHeart[1]) + parseFloat(MagnusExorcismus[1]) + parseFloat(SafetyWall[1]) + parseFloat(Gloria[1]) ;
 	var total_job3 = parseFloat(Meditatio[1]) + parseFloat(Assumptio[1]) + parseFloat(LexDivina[1]) + parseFloat(Judex[1]) + parseFloat(AdvancedMaceMastery[1]) + parseFloat(ManaRecharge[1]) + parseFloat(Suffragium[1]) + parseFloat(LexAeterna[1]) + parseFloat(Basilica[1]) + parseFloat(HolyWard[1]) ;
 	total_job_all = total_job1 + total_job2 + total_job3 ;
