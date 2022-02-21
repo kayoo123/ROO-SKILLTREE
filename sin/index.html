@@ -9,6 +9,111 @@
 	<h1 id=a><img src="job1.png" alt="1" id="imgJob1" /><img src="job2.png" alt="2" id="imgJob2" hidden /><img src="job3.png" alt="3" id="imgJob3" hidden />WORK IN PROGRESS</h1>
 	<p>Remaining Job Skill: <b><label id="ptLeft"></label></b><input id="btnShow" type="button" value = "Show" onclick="showJob()" style="float: right;"/><input id="btnHide"type="button" value = "Hide" onclick="hideJob()" style="float: right;" hidden/></p>
 	<fieldset id="f1"><legend> 1st job: [<label id="job1">0</label>/40]</legend>	
+		<div id="DoubleAttack">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(DoubleAttack)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(DoubleAttack)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(DoubleAttack)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(DoubleAttack)"/>
+			<img src="img/1.gif" alt="DoubleAttack" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m1')">Holy Light</a></span> [<label id="1">0</label>/10]
+			<div id="m1" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m1')">&times;</span>
+					<script src="skill/1-DoubleAttack.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="Evenom">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(Evenom)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(Evenom)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(Evenom)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(Evenom)"/>
+			<img src="img/2.gif" alt="Evenom" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m2')">Holy Light</a></span> [<label id="2">0</label>/10]
+			<div id="m2" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m2')">&times;</span>
+					<script src="skill/2-Evenom.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="ShieldDodge">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(ShieldDodge)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(ShieldDodge)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(ShieldDodge)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(ShieldDodge)"/>
+			<img src="img/3.gif" alt="ShieldDodge" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m3')">Holy Light</a></span> [<label id="3">0</label>/5]
+			<div id="m3" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m3')">&times;</span>
+					<script src="skill/3-ShieldDodge.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="TrickControl">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(TrickControl)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(TrickControl)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(TrickControl)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(TrickControl)"/>
+			<img src="img/4.gif" alt="TrickControl" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m4')">Holy Light</a></span> [<label id="4">0</label>/10]
+			<div id="m4" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m4')">&times;</span>
+					<script src="skill/4-TrickControl.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="IncreaseDodge">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(IncreaseDodge)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(IncreaseDodge)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(IncreaseDodge)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(IncreaseDodge)"/>
+			<img src="img/5.gif" alt="IncreaseDodge" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m5')">Holy Light</a></span> [<label id="5">0</label>/10]
+			<div id="m5" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m5')">&times;</span>
+					<script src="skill/5-IncreaseDodge.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="Hiding">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(Hiding)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(Hiding)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(Hiding)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(Hiding)"/>
+			<img src="img/6.gif" alt="Hiding" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m6')">Holy Light</a></span> [<label id="6">0</label>/10]
+			<div id="m6" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m6')">&times;</span>
+					<script src="skill/6-Hiding.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
+		<div id="BackSlide">
+			<input type="button" value="--" id="decM" onclick="decNumberMax(BackSlide)"/>
+			<input type="button" value="-" id="dec" onclick="decNumber(BackSlide)"/>
+			<input type="button" value="+" id="inc" onclick="incNumber(BackSlide)"/>
+			<input type="button" value="++" id="decM" onclick="incNumberMax(BackSlide)"/>
+			<img src="img/7.gif" alt="BackSlide" style="width:20px;height:20px;display:inline;">
+			<span title=""><a href=# onclick="showModal('m7')">Holy Light</a></span> [<label id="7">0</label>/1]
+			<div id="m7" class="modal">
+				  <div class="modal-content">
+					<span class="close" onclick="hideModal('m7')">&times;</span>
+					<script src="skill/7-BackSlide.js" lvl="1"></script>
+				 </div>
+			</div>
+			<br />
+		</div>
 	</fieldset>
 
 	<fieldset id="f2" hidden><legend> 2nd job: [<label id="job2">0</label>/40]</legend>
